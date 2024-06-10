@@ -1,0 +1,484 @@
+fileFormatVersion: 2
+guid: 1a8ec00af5c950240b35eb52f0c2cae1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Char Button Anim_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 25
+        width: 189
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c408f3d4551b54f9d76aed479bdab5
+      internalID: 1342036035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 25
+        width: 193
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e2629f37370be4babc4661b47ae30a
+      internalID: 781325093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_28
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 25
+        width: 189
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899960149fa1179468ef129dbcd4f43f
+      internalID: -553205372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_29
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 25
+        width: 195
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0849fad0892a55a44a2a12c548d91e11
+      internalID: 1529145704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_30
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 23
+        width: 189
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f95e1b80da91ab4bbd340f6a298906e
+      internalID: -1012053981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_31
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 25
+        width: 192
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcb46396802cb2429beddac076825cc
+      internalID: -534376653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_32
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 25
+        width: 190
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb553c732ae4cf44b33dd765578ece5
+      internalID: 779351527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_33
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 25
+        width: 196
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484aead32f94e834e95af81b2f5f847e
+      internalID: 797071650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_35
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 25
+        width: 193
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adffad1f74042ba488c526509b4036cc
+      internalID: -2141763908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_36
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 25
+        width: 190
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b337611c2c78c458f761d3e17f7d3d
+      internalID: -1813834240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_38
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 25
+        width: 187
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c10ade73a09f2d47954d12ed47836d9
+      internalID: 206599029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_39
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 25
+        width: 197
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d4003e3d65b8d43a6d55f2c1063fc9
+      internalID: -1408298376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_41
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 25
+        width: 193
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cf8f42aa5209d47845fd36db04663b
+      internalID: 1782848391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char Button Anim_42
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dd9e2503ab0ca458af16b53e98c779
+      internalID: 1438789020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Char Button Anim_0: -697549537
+      Char Button Anim_1: 2112685630
+      Char Button Anim_10: 645082921
+      Char Button Anim_11: -489960838
+      Char Button Anim_12: 832504530
+      Char Button Anim_13: -1495654534
+      Char Button Anim_14: 2028988604
+      Char Button Anim_15: -1246945082
+      Char Button Anim_16: -1766694446
+      Char Button Anim_17: -750155135
+      Char Button Anim_18: -1725768903
+      Char Button Anim_19: 741666718
+      Char Button Anim_2: -1279950302
+      Char Button Anim_20: -1219145833
+      Char Button Anim_21: -1171070471
+      Char Button Anim_22: -2061703052
+      Char Button Anim_23: -931706183
+      Char Button Anim_24: -946423745
+      Char Button Anim_25: -6932182
+      Char Button Anim_26: 1342036035
+      Char Button Anim_27: 781325093
+      Char Button Anim_28: -553205372
+      Char Button Anim_29: 1529145704
+      Char Button Anim_3: -717718754
+      Char Button Anim_30: -1012053981
+      Char Button Anim_31: -534376653
+      Char Button Anim_32: 779351527
+      Char Button Anim_33: 797071650
+      Char Button Anim_34: -109657984
+      Char Button Anim_35: -2141763908
+      Char Button Anim_36: -1813834240
+      Char Button Anim_37: -1555575808
+      Char Button Anim_38: 206599029
+      Char Button Anim_39: -1408298376
+      Char Button Anim_4: -974897973
+      Char Button Anim_40: -1224756757
+      Char Button Anim_41: 1782848391
+      Char Button Anim_42: 1438789020
+      Char Button Anim_5: -556174162
+      Char Button Anim_6: 1659079378
+      Char Button Anim_7: -1061943467
+      Char Button Anim_8: -1830587496
+      Char Button Anim_9: -450613707
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

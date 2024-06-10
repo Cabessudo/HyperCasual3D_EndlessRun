@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44873b3a59405f14693fa83930698ffa, type: 3}
+  m_Name: SO_LevelPiece_04
+  m_EditorClassIdentifier: 
+  artType: 2
+  levelPieces:
+  - {fileID: 8720803600373804645, guid: b10b79b880eb62246a2b457d84681b2d, type: 3}
+  - {fileID: 6692704773628515544, guid: bcf7a63e7b4aeba40ac57f1bbbcd791d, type: 3}
+  - {fileID: -419273196059599414, guid: 057545ec2d3efd948941ca9cdc0ee4fa, type: 3}
+  - {fileID: -9037013103895121557, guid: 3ffcb7a3e02f70d4db3136a0f9b2daf4, type: 3}
+  - {fileID: 8836711930761244760, guid: 108506aa97803634ebb996713268bc97, type: 3}
+  - {fileID: -2950326348443998720, guid: 994e26f84cce2e84bb37645e568c79ad, type: 3}
+  - {fileID: 1125440292216993391, guid: 40d60cee658554346aa87638a165da6e, type: 3}
+  - {fileID: 7770474971098313256, guid: 6fdaaf680532dc54b9da119d31ff985a, type: 3}
+  - {fileID: -7181836716842393735, guid: ea51ae31bce5d7f4cb67a5d1c954909e, type: 3}
+  - {fileID: 7815680317965333635, guid: 0743f8a6df2e8d844a099a340fdc7c99, type: 3}
+  - {fileID: 4617119891711559447, guid: cb66aaf7cf6690a4bbe3fae0fe1ebc9e, type: 3}
+  - {fileID: 8720803600373804645, guid: 1b2061b5d6ac2d9459fec07e6359034b, type: 3}
+  startLevelPiece:
+  - {fileID: 4617119891711559447, guid: 0fea5d3a1ef5b5243b2f4181aa79c6f9, type: 3}
+  endLevelPiece:
+  - {fileID: -9037013103895121557, guid: 4ce21fa3f00b0754186d66e7154aa988, type: 3}
+  posEndLevelPiece:
+  - {fileID: 8720803600373804645, guid: 8d069ec5052f2ee4ea87b0d57c90ec7e, type: 3}
+  - {fileID: -419273196059599414, guid: 72859ad0aabc97a42885c4391fbe2b4a, type: 3}
+  - {fileID: -2950326348443998720, guid: da8cd0a971a46b540aaa14ccc5298462, type: 3}
+  - {fileID: 6692704773628515544, guid: 98dbb7ca0712e634e8da7ca827c38354, type: 3}
+  - {fileID: -9037013103895121557, guid: fd093a4951fd18243b12fcf4bc309b0a, type: 3}
+  - {fileID: 1125440292216993391, guid: be078a59265370d4e954959beae81381, type: 3}
+  - {fileID: -7181836716842393735, guid: 5184dc50567143342b5a643bdb0f529a, type: 3}
+  phaseLvl: 4
+  startPiece: 3
+  pieces: 20
+  endPiece: 1
+  posEndPiece: 5
+  delayToSpawn: 0

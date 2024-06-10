@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1006808555404815605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5737465366780987214}
+  - component: {fileID: 6433782149397725232}
+  - component: {fileID: 1437426142213929628}
+  - component: {fileID: 3322874523519403419}
+  - component: {fileID: 7317758195163227301}
+  m_Layer: 0
+  m_Name: PFB_PowerUpFly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5737465366780987214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6433782149397725232
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Mesh: {fileID: 4300000, guid: 2b1600b8b48e3ac4c87e5d81a4153ab7, type: 3}
+--- !u!23 &1437426142213929628
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3f395daf3bbba9c4fbadeaa5c2b8757f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3322874523519403419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7317758195163227301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4bb0bb3938671468b0e0827a361f2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Player
+  soPWUPLevel: {fileID: 11400000, guid: 0e093774c64e80743893dcefaf47257c, type: 2}
+  powerUp: {fileID: 0}
+  duration: 1
+  particleTag: Fly
+  pwupSprite: {fileID: 21300000, guid: 704ebc37c13109e4f8672c81160d17ec, type: 3}
+  pwupTxt: "J\xE1 vi isso em algum lugar"
+  pwupRotation: 0
+  ballons: []
+  easeFly: 27
+  SOFly: {fileID: 11400000, guid: a0bafcef77cc41f48a8c9d046870b4ff, type: 2}
+  flyHeight: 11
+  colors:
+  - {fileID: 2100000, guid: c61af19bd75cea141852910d2b65ab65, type: 2}
+  - {fileID: 2100000, guid: edffb203f84b2b64499d1fa97cfd39bc, type: 2}
+  - {fileID: 2100000, guid: 7d22fc6b9a431b043a917fb89a80bcfc, type: 2}
+  - {fileID: 2100000, guid: 0110982cafeaa954a916ece00868dd46, type: 2}
+  - {fileID: 2100000, guid: 0b7022933e09ec142a7a494a6ffcf726, type: 2}
+  - {fileID: 2100000, guid: 10f482e6e6d6c004083ae8581c93e431, type: 2}
+  - {fileID: 2100000, guid: c870352210529444cabef13db4fa2301, type: 2}
+  - {fileID: 2100000, guid: ae4ff49dfb4c229488b12d99e4b0e3fc, type: 2}
+  - {fileID: 2100000, guid: 9b4c5cc012d4daa4091a98d5a1b07a09, type: 2}
+  mesh: {fileID: 1437426142213929628}
+  coinCase: {fileID: 3540335955483353817, guid: ba6dc7e7ce62b534f98667a1c052ace5,
+    type: 3}

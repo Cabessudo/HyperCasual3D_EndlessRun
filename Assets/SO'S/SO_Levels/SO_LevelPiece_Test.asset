@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44873b3a59405f14693fa83930698ffa, type: 3}
+  m_Name: SO_LevelPiece_Test
+  m_EditorClassIdentifier: 
+  artType: 1
+  levelPieces:
+  - {fileID: 4617119891711559447, guid: b923c790b4e7293498029b1d86346c6b, type: 3}
+  startLevelPiece:
+  - {fileID: 4617119891711559447, guid: 0fea5d3a1ef5b5243b2f4181aa79c6f9, type: 3}
+  endLevelPiece:
+  - {fileID: -9037013103895121557, guid: 4ce21fa3f00b0754186d66e7154aa988, type: 3}
+  posEndLevelPiece: []
+  phaseLvl: 0
+  startPiece: 2
+  pieces: 16
+  endPiece: 1
+  posEndPiece: 0
+  delayToSpawn: 0

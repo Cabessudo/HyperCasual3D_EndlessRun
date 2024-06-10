@@ -1,0 +1,1709 @@
+fileFormatVersion: 2
+guid: 6e4b26fde7f77c046bed3bb532de26f1
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Body_jnt
+  - first:
+      1: 100004
+    second: Foot_Left_jnt
+  - first:
+      1: 100006
+    second: Foot_Left_jnt1
+  - first:
+      1: 100008
+    second: Foot_Right_jnt
+  - first:
+      1: 100010
+    second: Foot_Right_jnt1
+  - first:
+      1: 100012
+    second: Hand_Left_jnt
+  - first:
+      1: 100014
+    second: Hand_Right_jnt
+  - first:
+      1: 100016
+    second: Hat_jnt
+  - first:
+      1: 100018
+    second: Hat_jnt1
+  - first:
+      1: 100020
+    second: Head_jnt
+  - first:
+      1: 100022
+    second: Hips_jnt
+  - first:
+      1: 100024
+    second: LowerArm_Left_jnt
+  - first:
+      1: 100026
+    second: LowerArm_Right_jnt
+  - first:
+      1: 100028
+    second: LowerLeg_Left_jnt
+  - first:
+      1: 100030
+    second: LowerLeg_Right_jnt
+  - first:
+      1: 100032
+    second: Root_jnt
+  - first:
+      1: 100034
+    second: Spine_jnt
+  - first:
+      1: 100036
+    second: UpperArm_Left_jnt
+  - first:
+      1: 100038
+    second: UpperArm_Right_jnt
+  - first:
+      1: 100040
+    second: UpperLeg_Left_jnt
+  - first:
+      1: 100042
+    second: UpperLeg_Right_jnt
+  - first:
+      1: 100044
+    second: Body
+  - first:
+      1: 100046
+    second: Foot_Left
+  - first:
+      1: 100048
+    second: Foot_Right
+  - first:
+      1: 100050
+    second: Hand_Left
+  - first:
+      1: 100052
+    second: Hand_Right
+  - first:
+      1: 100054
+    second: Head
+  - first:
+      1: 100056
+    second: LowerArm_Left
+  - first:
+      1: 100058
+    second: LowerArm_Right
+  - first:
+      1: 100060
+    second: LowerBody
+  - first:
+      1: 100062
+    second: LowerLeg_Left
+  - first:
+      1: 100064
+    second: LowerLeg_Right
+  - first:
+      1: 100066
+    second: Prop_FireFighterPack
+  - first:
+      1: 100068
+    second: UpperArm_Left
+  - first:
+      1: 100070
+    second: UpperArm_Left24
+  - first:
+      1: 100072
+    second: UpperArm_Left25
+  - first:
+      1: 100074
+    second: UpperArm_Right
+  - first:
+      1: 100076
+    second: UpperArm_Right23
+  - first:
+      1: 100078
+    second: UpperArm_Right24
+  - first:
+      1: 100080
+    second: UpperLeg_Left
+  - first:
+      1: 100082
+    second: UpperLeg_Right
+  - first:
+      1: 100084
+    second: Weapon_AssultRifle01
+  - first:
+      1: 100086
+    second: Weapon_AssultRifle02
+  - first:
+      1: 100088
+    second: Weapon_FlashBang
+  - first:
+      1: 100090
+    second: Weapon_Grenade
+  - first:
+      1: 100092
+    second: Weapon_Pistol
+  - first:
+      1: 100094
+    second: Weapon_Rifle
+  - first:
+      1: 100096
+    second: Weapon_RPG
+  - first:
+      1: 100098
+    second: Weapon_Shotgun
+  - first:
+      1: 100100
+    second: Weapon_SmokeBomb
+  - first:
+      1: 100102
+    second: Weapon_SniperRifle
+  - first:
+      1: 100104
+    second: Weapon_SubMachineGun
+  - first:
+      1: 100106
+    second: Weapons
+  - first:
+      1: 100108
+    second: Weapon_Shield
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Body_jnt
+  - first:
+      4: 400004
+    second: Foot_Left_jnt
+  - first:
+      4: 400006
+    second: Foot_Left_jnt1
+  - first:
+      4: 400008
+    second: Foot_Right_jnt
+  - first:
+      4: 400010
+    second: Foot_Right_jnt1
+  - first:
+      4: 400012
+    second: Hand_Left_jnt
+  - first:
+      4: 400014
+    second: Hand_Right_jnt
+  - first:
+      4: 400016
+    second: Hat_jnt
+  - first:
+      4: 400018
+    second: Hat_jnt1
+  - first:
+      4: 400020
+    second: Head_jnt
+  - first:
+      4: 400022
+    second: Hips_jnt
+  - first:
+      4: 400024
+    second: LowerArm_Left_jnt
+  - first:
+      4: 400026
+    second: LowerArm_Right_jnt
+  - first:
+      4: 400028
+    second: LowerLeg_Left_jnt
+  - first:
+      4: 400030
+    second: LowerLeg_Right_jnt
+  - first:
+      4: 400032
+    second: Root_jnt
+  - first:
+      4: 400034
+    second: Spine_jnt
+  - first:
+      4: 400036
+    second: UpperArm_Left_jnt
+  - first:
+      4: 400038
+    second: UpperArm_Right_jnt
+  - first:
+      4: 400040
+    second: UpperLeg_Left_jnt
+  - first:
+      4: 400042
+    second: UpperLeg_Right_jnt
+  - first:
+      4: 400044
+    second: Body
+  - first:
+      4: 400046
+    second: Foot_Left
+  - first:
+      4: 400048
+    second: Foot_Right
+  - first:
+      4: 400050
+    second: Hand_Left
+  - first:
+      4: 400052
+    second: Hand_Right
+  - first:
+      4: 400054
+    second: Head
+  - first:
+      4: 400056
+    second: LowerArm_Left
+  - first:
+      4: 400058
+    second: LowerArm_Right
+  - first:
+      4: 400060
+    second: LowerBody
+  - first:
+      4: 400062
+    second: LowerLeg_Left
+  - first:
+      4: 400064
+    second: LowerLeg_Right
+  - first:
+      4: 400066
+    second: Prop_FireFighterPack
+  - first:
+      4: 400068
+    second: UpperArm_Left
+  - first:
+      4: 400070
+    second: UpperArm_Left24
+  - first:
+      4: 400072
+    second: UpperArm_Left25
+  - first:
+      4: 400074
+    second: UpperArm_Right
+  - first:
+      4: 400076
+    second: UpperArm_Right23
+  - first:
+      4: 400078
+    second: UpperArm_Right24
+  - first:
+      4: 400080
+    second: UpperLeg_Left
+  - first:
+      4: 400082
+    second: UpperLeg_Right
+  - first:
+      4: 400084
+    second: Weapon_AssultRifle01
+  - first:
+      4: 400086
+    second: Weapon_AssultRifle02
+  - first:
+      4: 400088
+    second: Weapon_FlashBang
+  - first:
+      4: 400090
+    second: Weapon_Grenade
+  - first:
+      4: 400092
+    second: Weapon_Pistol
+  - first:
+      4: 400094
+    second: Weapon_Rifle
+  - first:
+      4: 400096
+    second: Weapon_RPG
+  - first:
+      4: 400098
+    second: Weapon_Shotgun
+  - first:
+      4: 400100
+    second: Weapon_SmokeBomb
+  - first:
+      4: 400102
+    second: Weapon_SniperRifle
+  - first:
+      4: 400104
+    second: Weapon_SubMachineGun
+  - first:
+      4: 400106
+    second: Weapons
+  - first:
+      4: 400108
+    second: Weapon_Shield
+  - first:
+      23: 2300000
+    second: Body
+  - first:
+      23: 2300002
+    second: Foot_Left
+  - first:
+      23: 2300004
+    second: Foot_Right
+  - first:
+      23: 2300006
+    second: Hand_Left
+  - first:
+      23: 2300008
+    second: Hand_Right
+  - first:
+      23: 2300010
+    second: Head
+  - first:
+      23: 2300012
+    second: LowerArm_Left
+  - first:
+      23: 2300014
+    second: LowerArm_Right
+  - first:
+      23: 2300016
+    second: LowerBody
+  - first:
+      23: 2300018
+    second: LowerLeg_Left
+  - first:
+      23: 2300020
+    second: LowerLeg_Right
+  - first:
+      23: 2300022
+    second: Prop_FireFighterPack
+  - first:
+      23: 2300024
+    second: UpperArm_Left
+  - first:
+      23: 2300026
+    second: UpperArm_Left24
+  - first:
+      23: 2300028
+    second: UpperArm_Left25
+  - first:
+      23: 2300030
+    second: UpperArm_Right
+  - first:
+      23: 2300032
+    second: UpperArm_Right23
+  - first:
+      23: 2300034
+    second: UpperArm_Right24
+  - first:
+      23: 2300036
+    second: UpperLeg_Left
+  - first:
+      23: 2300038
+    second: UpperLeg_Right
+  - first:
+      23: 2300040
+    second: Weapon_AssultRifle01
+  - first:
+      23: 2300042
+    second: Weapon_AssultRifle02
+  - first:
+      23: 2300044
+    second: Weapon_FlashBang
+  - first:
+      23: 2300046
+    second: Weapon_Grenade
+  - first:
+      23: 2300048
+    second: Weapon_Pistol
+  - first:
+      23: 2300050
+    second: Weapon_Rifle
+  - first:
+      23: 2300052
+    second: Weapon_RPG
+  - first:
+      23: 2300054
+    second: Weapon_Shotgun
+  - first:
+      23: 2300056
+    second: Weapon_SmokeBomb
+  - first:
+      23: 2300058
+    second: Weapon_SniperRifle
+  - first:
+      23: 2300060
+    second: Weapon_SubMachineGun
+  - first:
+      23: 2300062
+    second: Weapon_Shield
+  - first:
+      33: 3300000
+    second: Body
+  - first:
+      33: 3300002
+    second: Foot_Left
+  - first:
+      33: 3300004
+    second: Foot_Right
+  - first:
+      33: 3300006
+    second: Hand_Left
+  - first:
+      33: 3300008
+    second: Hand_Right
+  - first:
+      33: 3300010
+    second: Head
+  - first:
+      33: 3300012
+    second: LowerArm_Left
+  - first:
+      33: 3300014
+    second: LowerArm_Right
+  - first:
+      33: 3300016
+    second: LowerBody
+  - first:
+      33: 3300018
+    second: LowerLeg_Left
+  - first:
+      33: 3300020
+    second: LowerLeg_Right
+  - first:
+      33: 3300022
+    second: Prop_FireFighterPack
+  - first:
+      33: 3300024
+    second: UpperArm_Left
+  - first:
+      33: 3300026
+    second: UpperArm_Left24
+  - first:
+      33: 3300028
+    second: UpperArm_Left25
+  - first:
+      33: 3300030
+    second: UpperArm_Right
+  - first:
+      33: 3300032
+    second: UpperArm_Right23
+  - first:
+      33: 3300034
+    second: UpperArm_Right24
+  - first:
+      33: 3300036
+    second: UpperLeg_Left
+  - first:
+      33: 3300038
+    second: UpperLeg_Right
+  - first:
+      33: 3300040
+    second: Weapon_AssultRifle01
+  - first:
+      33: 3300042
+    second: Weapon_AssultRifle02
+  - first:
+      33: 3300044
+    second: Weapon_FlashBang
+  - first:
+      33: 3300046
+    second: Weapon_Grenade
+  - first:
+      33: 3300048
+    second: Weapon_Pistol
+  - first:
+      33: 3300050
+    second: Weapon_Rifle
+  - first:
+      33: 3300052
+    second: Weapon_RPG
+  - first:
+      33: 3300054
+    second: Weapon_Shotgun
+  - first:
+      33: 3300056
+    second: Weapon_SmokeBomb
+  - first:
+      33: 3300058
+    second: Weapon_SniperRifle
+  - first:
+      33: 3300060
+    second: Weapon_SubMachineGun
+  - first:
+      33: 3300062
+    second: Weapon_Shield
+  - first:
+      43: 4300000
+    second: Foot_Left
+  - first:
+      43: 4300002
+    second: LowerLeg_Left
+  - first:
+      43: 4300004
+    second: UpperLeg_Left
+  - first:
+      43: 4300006
+    second: Foot_Right
+  - first:
+      43: 4300008
+    second: LowerLeg_Right
+  - first:
+      43: 4300010
+    second: UpperLeg_Right
+  - first:
+      43: 4300012
+    second: Head
+  - first:
+      43: 4300014
+    second: Hand_Right
+  - first:
+      43: 4300016
+    second: Weapon_AssultRifle01
+  - first:
+      43: 4300018
+    second: Weapon_AssultRifle02
+  - first:
+      43: 4300020
+    second: Weapon_SubMachineGun
+  - first:
+      43: 4300022
+    second: Weapon_Pistol
+  - first:
+      43: 4300024
+    second: Weapon_Shotgun
+  - first:
+      43: 4300026
+    second: Weapon_SniperRifle
+  - first:
+      43: 4300028
+    second: Weapon_Rifle
+  - first:
+      43: 4300030
+    second: Weapon_FlashBang
+  - first:
+      43: 4300032
+    second: Weapon_SmokeBomb
+  - first:
+      43: 4300034
+    second: Weapon_Grenade
+  - first:
+      43: 4300036
+    second: Weapon_RPG
+  - first:
+      43: 4300038
+    second: LowerArm_Right
+  - first:
+      43: 4300040
+    second: UpperArm_Right
+  - first:
+      43: 4300042
+    second: UpperArm_Left24
+  - first:
+      43: 4300044
+    second: UpperArm_Right23
+  - first:
+      43: 4300046
+    second: Hand_Left
+  - first:
+      43: 4300048
+    second: LowerArm_Left
+  - first:
+      43: 4300050
+    second: UpperArm_Left
+  - first:
+      43: 4300052
+    second: UpperArm_Right24
+  - first:
+      43: 4300054
+    second: UpperArm_Left25
+  - first:
+      43: 4300056
+    second: Body
+  - first:
+      43: 4300058
+    second: Prop_FireFighterPack
+  - first:
+      43: 4300060
+    second: LowerBody
+  - first:
+      43: 4300062
+    second: Weapon_Shield
+  - first:
+      74: 7400000
+    second: Character_Handgun_Reload
+  - first:
+      74: 7400002
+    second: Character_Handgun_Shoot
+  - first:
+      74: 7400004
+    second: Character_Auto_SingleShot
+  - first:
+      74: 7400006
+    second: Character_Auto_FullAuto_Shoot
+  - first:
+      74: 7400008
+    second: Character_Auto_Reload
+  - first:
+      74: 7400010
+    second: Character_SubMachineGun_SingleShot
+  - first:
+      74: 7400012
+    second: Character_SubMachineGun_FullAuto_Shoot
+  - first:
+      74: 7400014
+    second: Character_SubMachineGun_Reload
+  - first:
+      74: 7400016
+    second: Character_Shotgun_Shoot
+  - first:
+      74: 7400018
+    second: Character_Shotgun_Reload
+  - first:
+      74: 7400020
+    second: Character_Rifle_Shoot_Reload
+  - first:
+      74: 7400022
+    second: Character_RPG_Shoot
+  - first:
+      74: 7400024
+    second: Character_Handgun_Idle
+  - first:
+      74: 7400026
+    second: Character_Auto_Idle
+  - first:
+      74: 7400028
+    second: Character_SubMachineGun_Idle
+  - first:
+      74: 7400030
+    second: Character_Shotgun_Idle
+  - first:
+      74: 7400032
+    second: Character_Rifle_Idle
+  - first:
+      74: 7400034
+    second: CharacterUpper_RPG_Idle
+  - first:
+      74: 7400036
+    second: Character_RPG_Idle
+  - first:
+      74: 7400038
+    second: Character_MiniGun
+  - first:
+      74: 7400040
+    second: Character_MiniGun_Idle
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Body_jnt' has translation animation that
+      will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Character_Handgun_Shoot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 5
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Handgun_Reload
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 23
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Auto_SingleShot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 72
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Auto_FullAuto_Shoot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 92
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Auto_Reload
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 101
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_SubMachineGun_SingleShot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 183
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_SubMachineGun_FullAuto_Shoot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 181
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_SubMachineGun_Reload
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 192
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Shotgun_Shoot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 251
+      lastFrame: 271
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Shotgun_Reload
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 272
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Rifle_Shoot_Reload
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 301
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_RPG_Shoot
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 401
+      lastFrame: 428
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Handgun_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 6
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Auto_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 72
+      lastFrame: 73
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_SubMachineGun_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 162
+      lastFrame: 163
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Shotgun_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 252
+      lastFrame: 252.1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_Rifle_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 302
+      lastFrame: 303
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_RPG_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 401
+      lastFrame: 401.1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_MiniGun
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 432
+      lastFrame: 440
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt1
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt/Hand_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt/Hand_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt/Foot_Left_jnt1
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt/Foot_Right_jnt1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Character_MiniGun_Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 432.9
+      lastFrame: 433
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt1
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt/Hand_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt/Hand_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt/Foot_Left_jnt1
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt
+        weight: 1
+      - path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt/Foot_Right_jnt1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 2
+    tangentImportMode: 2
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 2
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hips_jnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Left_jnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Right_jnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Left_jnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Right_jnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Left_jnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Right_jnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Body_jnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_jnt
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_jnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_Left_jnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_Right_jnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_Left_jnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_Right_jnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Left_jnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Right_jnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hat_jnt
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hat_jnt1
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Animations(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root_jnt
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips_jnt
+      parentName: 
+      position: {x: -0, y: 10.449876, z: 0}
+      rotation: {x: -0.010444531, y: -0.03883079, z: 0.25953355, w: 0.9648966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_jnt
+      parentName: 
+      position: {x: 0.09555898, y: 0.16478358, z: 5.012273e-17}
+      rotation: {x: 0.013083731, y: -0.02271187, z: 0.866206, w: -0.49899927}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_jnt
+      parentName: 
+      position: {x: -6.7032523, y: 1.488421e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -1.6657682e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_jnt
+      parentName: 
+      position: {x: -3.106261, y: 6.897285e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -1.9984012e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hat_jnt
+      parentName: 
+      position: {x: -5.42271, y: 1.2040835e-15, z: 0}
+      rotation: {x: 3.593872e-16, y: -1.4046645e-16, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hat_jnt1
+      parentName: 
+      position: {x: -5.42271, y: 1.2040835e-15, z: 0}
+      rotation: {x: 4.04522e-16, y: -9.778496e-17, z: 0.7071068, w: 0.7071068}
+      scale: {x: -1, y: -1, z: -1}
+    - name: UpperArm_Left_jnt
+      parentName: 
+      position: {x: -2.1910846, y: -5.65232, z: 0}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm_Left_jnt
+      parentName: 
+      position: {x: 4.71188, y: -2.842171e-15, z: 5.77041e-16}
+      rotation: {x: 0, y: -0, z: -3.330669e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Left_jnt
+      parentName: 
+      position: {x: 4.403, y: 0, z: 5.39209e-16}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -2.2816785e-15}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperArm_Right_jnt
+      parentName: 
+      position: {x: -2.1910846, y: 5.65232, z: 0}
+      rotation: {x: 0.7071068, y: -0.7071068, z: 8.659561e-17, w: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm_Right_jnt
+      parentName: 
+      position: {x: -4.7118998, y: 5.684342e-15, z: -5.7704135e-16}
+      rotation: {x: -6.627657e-19, y: -3.586922e-21, z: 5.0220245e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Right_jnt
+      parentName: 
+      position: {x: -4.403, y: -8.526513e-15, z: -5.39212e-16}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 1.8375893e-15}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Left_jnt
+      parentName: 
+      position: {x: -2.5698245, y: -1.4210855e-15, z: 0}
+      rotation: {x: 0.028649574, y: 0.030012136, z: 0.49874875, w: 0.865753}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Left_jnt
+      parentName: 
+      position: {x: -3.7452164, y: -3.5527137e-16, z: -2.7105055e-21}
+      rotation: {x: -0.7075902, y: 0.0000064468913, z: -0.0000061459123, w: 0.706623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Left_jnt
+      parentName: 
+      position: {x: -3.8874376, y: 1.2252568e-16, z: 7.3426064e-11}
+      rotation: {x: 0.50674546, y: 0.49426788, z: -0.50519735, w: 0.49364367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Right_jnt
+      parentName: 
+      position: {x: 1.2763839, y: -2.2304337, z: 0}
+      rotation: {x: -0.49867836, y: 0.8654293, z: 0.046628922, w: -0.013333483}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Right_jnt
+      parentName: 
+      position: {x: 3.7452202, y: 2.4868995e-15, z: -1.0987412e-11}
+      rotation: {x: -0.70410997, y: -0.000030960506, z: 0.00005181963, w: 0.710091}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Right_jnt
+      parentName: 
+      position: {x: 3.8874402, y: 8.1971346e-11, z: -3.6907224e-10}
+      rotation: {x: 0.49583417, y: 0.5067274, z: -0.49273258, w: 0.50456953}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.542
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.1
+    rootMotionBoneName: Root_jnt
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d55a3dafe23105e409ee70d6605cbd49,
+    type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

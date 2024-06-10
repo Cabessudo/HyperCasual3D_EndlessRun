@@ -1,0 +1,1756 @@
+fileFormatVersion: 2
+guid: c72c97e952bf7834b85e6164373d310d
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Body
+  - first:
+      1: 100002
+    second: Body_jnt
+  - first:
+      1: 100004
+    second: Foot_Left
+  - first:
+      1: 100006
+    second: Foot_Left_jnt
+  - first:
+      1: 100008
+    second: Foot_Left_jnt1
+  - first:
+      1: 100010
+    second: Foot_Right
+  - first:
+      1: 100012
+    second: Foot_Right_jnt
+  - first:
+      1: 100014
+    second: Foot_Right_jnt1
+  - first:
+      1: 100016
+    second: GasMask
+  - first:
+      1: 100018
+    second: Hair_Bobs
+  - first:
+      1: 100020
+    second: Hair_Ponytail
+  - first:
+      1: 100022
+    second: Hair_Punk
+  - first:
+      1: 100024
+    second: Hair_Top
+  - first:
+      1: 100026
+    second: Hand_Left
+  - first:
+      1: 100028
+    second: Hand_Left_jnt
+  - first:
+      1: 100030
+    second: Hand_Right
+  - first:
+      1: 100032
+    second: Hand_Right_jnt
+  - first:
+      1: 100034
+    second: Hat_Cap
+  - first:
+      1: 100036
+    second: Hat_Cap_Backwards
+  - first:
+      1: 100038
+    second: Hat_FireFighter
+  - first:
+      1: 100040
+    second: Hat_Helmet
+  - first:
+      1: 100042
+    second: Hat_Hobo
+  - first:
+      1: 100044
+    second: Hat_jnt
+  - first:
+      1: 100046
+    second: Hat_Pimp
+  - first:
+      1: 100048
+    second: Hat_Police
+  - first:
+      1: 100050
+    second: Hat_Sheriff
+  - first:
+      1: 100052
+    second: Head
+  - first:
+      1: 100054
+    second: Head_jnt
+  - first:
+      1: 100056
+    second: Hips_jnt
+  - first:
+      1: 100058
+    second: LowerArm_Left
+  - first:
+      1: 100060
+    second: LowerArm_Left_jnt
+  - first:
+      1: 100062
+    second: LowerArm_Right
+  - first:
+      1: 100064
+    second: LowerArm_Right_jnt
+  - first:
+      1: 100066
+    second: LowerBody
+  - first:
+      1: 100068
+    second: LowerLeg_Left
+  - first:
+      1: 100070
+    second: LowerLeg_Left_jnt
+  - first:
+      1: 100072
+    second: LowerLeg_Right
+  - first:
+      1: 100074
+    second: LowerLeg_Right_jnt
+  - first:
+      1: 100076
+    second: Prop_Backpack
+  - first:
+      1: 100078
+    second: Prop_FireFighterPack
+  - first:
+      1: 100080
+    second: RiotHelmet
+  - first:
+      1: 100082
+    second: Root_jnt
+  - first:
+      1: 100084
+    second: //RootNode
+  - first:
+      1: 100086
+    second: Spine_jnt
+  - first:
+      1: 100088
+    second: UpperArm_Left
+  - first:
+      1: 100090
+    second: UpperArm_Left_jnt
+  - first:
+      1: 100092
+    second: UpperArm_Right
+  - first:
+      1: 100094
+    second: UpperArm_Right_jnt
+  - first:
+      1: 100096
+    second: UpperLeg_Left
+  - first:
+      1: 100098
+    second: UpperLeg_Left_jnt
+  - first:
+      1: 100100
+    second: UpperLeg_Right
+  - first:
+      1: 100102
+    second: UpperLeg_Right_jnt
+  - first:
+      1: 100104
+    second: WarHelmet
+  - first:
+      1: 100106
+    second: Base_mesh
+  - first:
+      1: 100108
+    second: BusinessMan
+  - first:
+      1: 100110
+    second: FireFighter
+  - first:
+      1: 100112
+    second: Hobo
+  - first:
+      1: 100114
+    second: Pimp
+  - first:
+      1: 100116
+    second: Policeman
+  - first:
+      1: 100118
+    second: Prostitute
+  - first:
+      1: 100120
+    second: Punk
+  - first:
+      1: 100122
+    second: RiotCop
+  - first:
+      1: 100124
+    second: Roadworker
+  - first:
+      1: 100126
+    second: Robber
+  - first:
+      1: 100128
+    second: Sheriff
+  - first:
+      1: 100130
+    second: StreetMan
+  - first:
+      1: 100132
+    second: Trucker
+  - first:
+      1: 100134
+    second: Woman
+  - first:
+      1: 100136
+    second: mesh_Base
+  - first:
+      1: 100138
+    second: mesh_BusinessMan
+  - first:
+      1: 100140
+    second: mesh_FireFighter
+  - first:
+      1: 100142
+    second: mesh_Hobo
+  - first:
+      1: 100144
+    second: mesh_Pimp
+  - first:
+      1: 100146
+    second: mesh_Policeman
+  - first:
+      1: 100148
+    second: mesh_Prostitute
+  - first:
+      1: 100150
+    second: mesh_Punk
+  - first:
+      1: 100152
+    second: mesh_RiotCop
+  - first:
+      1: 100154
+    second: mesh_Roadworker
+  - first:
+      1: 100156
+    second: mesh_Robber
+  - first:
+      1: 100158
+    second: mesh_Sheriff
+  - first:
+      1: 100160
+    second: mesh_StreetMan
+  - first:
+      1: 100162
+    second: mesh_Trucker
+  - first:
+      1: 100164
+    second: mesh_Woman
+  - first:
+      1: 100166
+    second: Arm_Left_jnt
+  - first:
+      1: 100168
+    second: Arm_Right_jnt
+  - first:
+      1: 100170
+    second: CH_BusinessMan
+  - first:
+      1: 100172
+    second: CH_FireFighter
+  - first:
+      1: 100174
+    second: CH_Hobo
+  - first:
+      1: 100176
+    second: CH_Pimp
+  - first:
+      1: 100178
+    second: CH_Policeman
+  - first:
+      1: 100180
+    second: CH_Prostitute
+  - first:
+      1: 100182
+    second: CH_Punk
+  - first:
+      1: 100184
+    second: CH_RiotCop
+  - first:
+      1: 100186
+    second: CH_Roadworker
+  - first:
+      1: 100188
+    second: CH_Robber
+  - first:
+      1: 100190
+    second: CH_Sheriff
+  - first:
+      1: 100192
+    second: CH_StreetMan
+  - first:
+      1: 100194
+    second: CH_Trucker
+  - first:
+      1: 100196
+    second: CH_Woman
+  - first:
+      1: 100198
+    second: Chest_jnt
+  - first:
+      1: 100200
+    second: Forearm_Left_jnt
+  - first:
+      1: 100202
+    second: Forearm_Right_jnt
+  - first:
+      1: 100204
+    second: Neck_jnt
+  - first:
+      1: 100206
+    second: Shoulder_Left_jnt
+  - first:
+      1: 100208
+    second: Shoulder_Right_jnt
+  - first:
+      1: 100210
+    second: Spine_jnt 1
+  - first:
+      1: 100212
+    second: Toe_Left_jnt
+  - first:
+      1: 100214
+    second: Toe_Right_jnt
+  - first:
+      4: 400000
+    second: Body
+  - first:
+      4: 400002
+    second: Body_jnt
+  - first:
+      4: 400004
+    second: Foot_Left
+  - first:
+      4: 400006
+    second: Foot_Left_jnt
+  - first:
+      4: 400008
+    second: Foot_Left_jnt1
+  - first:
+      4: 400010
+    second: Foot_Right
+  - first:
+      4: 400012
+    second: Foot_Right_jnt
+  - first:
+      4: 400014
+    second: Foot_Right_jnt1
+  - first:
+      4: 400016
+    second: GasMask
+  - first:
+      4: 400018
+    second: Hair_Bobs
+  - first:
+      4: 400020
+    second: Hair_Ponytail
+  - first:
+      4: 400022
+    second: Hair_Punk
+  - first:
+      4: 400024
+    second: Hair_Top
+  - first:
+      4: 400026
+    second: Hand_Left
+  - first:
+      4: 400028
+    second: Hand_Left_jnt
+  - first:
+      4: 400030
+    second: Hand_Right
+  - first:
+      4: 400032
+    second: Hand_Right_jnt
+  - first:
+      4: 400034
+    second: Hat_Cap
+  - first:
+      4: 400036
+    second: Hat_Cap_Backwards
+  - first:
+      4: 400038
+    second: Hat_FireFighter
+  - first:
+      4: 400040
+    second: Hat_Helmet
+  - first:
+      4: 400042
+    second: Hat_Hobo
+  - first:
+      4: 400044
+    second: Hat_jnt
+  - first:
+      4: 400046
+    second: Hat_Pimp
+  - first:
+      4: 400048
+    second: Hat_Police
+  - first:
+      4: 400050
+    second: Hat_Sheriff
+  - first:
+      4: 400052
+    second: Head
+  - first:
+      4: 400054
+    second: Head_jnt
+  - first:
+      4: 400056
+    second: Hips_jnt
+  - first:
+      4: 400058
+    second: LowerArm_Left
+  - first:
+      4: 400060
+    second: LowerArm_Left_jnt
+  - first:
+      4: 400062
+    second: LowerArm_Right
+  - first:
+      4: 400064
+    second: LowerArm_Right_jnt
+  - first:
+      4: 400066
+    second: LowerBody
+  - first:
+      4: 400068
+    second: LowerLeg_Left
+  - first:
+      4: 400070
+    second: LowerLeg_Left_jnt
+  - first:
+      4: 400072
+    second: LowerLeg_Right
+  - first:
+      4: 400074
+    second: LowerLeg_Right_jnt
+  - first:
+      4: 400076
+    second: Prop_Backpack
+  - first:
+      4: 400078
+    second: Prop_FireFighterPack
+  - first:
+      4: 400080
+    second: RiotHelmet
+  - first:
+      4: 400082
+    second: Root_jnt
+  - first:
+      4: 400084
+    second: //RootNode
+  - first:
+      4: 400086
+    second: Spine_jnt
+  - first:
+      4: 400088
+    second: UpperArm_Left
+  - first:
+      4: 400090
+    second: UpperArm_Left_jnt
+  - first:
+      4: 400092
+    second: UpperArm_Right
+  - first:
+      4: 400094
+    second: UpperArm_Right_jnt
+  - first:
+      4: 400096
+    second: UpperLeg_Left
+  - first:
+      4: 400098
+    second: UpperLeg_Left_jnt
+  - first:
+      4: 400100
+    second: UpperLeg_Right
+  - first:
+      4: 400102
+    second: UpperLeg_Right_jnt
+  - first:
+      4: 400104
+    second: WarHelmet
+  - first:
+      4: 400106
+    second: Base_mesh
+  - first:
+      4: 400108
+    second: BusinessMan
+  - first:
+      4: 400110
+    second: FireFighter
+  - first:
+      4: 400112
+    second: Hobo
+  - first:
+      4: 400114
+    second: Pimp
+  - first:
+      4: 400116
+    second: Policeman
+  - first:
+      4: 400118
+    second: Prostitute
+  - first:
+      4: 400120
+    second: Punk
+  - first:
+      4: 400122
+    second: RiotCop
+  - first:
+      4: 400124
+    second: Roadworker
+  - first:
+      4: 400126
+    second: Robber
+  - first:
+      4: 400128
+    second: Sheriff
+  - first:
+      4: 400130
+    second: StreetMan
+  - first:
+      4: 400132
+    second: Trucker
+  - first:
+      4: 400134
+    second: Woman
+  - first:
+      4: 400136
+    second: mesh_Base
+  - first:
+      4: 400138
+    second: mesh_BusinessMan
+  - first:
+      4: 400140
+    second: mesh_FireFighter
+  - first:
+      4: 400142
+    second: mesh_Hobo
+  - first:
+      4: 400144
+    second: mesh_Pimp
+  - first:
+      4: 400146
+    second: mesh_Policeman
+  - first:
+      4: 400148
+    second: mesh_Prostitute
+  - first:
+      4: 400150
+    second: mesh_Punk
+  - first:
+      4: 400152
+    second: mesh_RiotCop
+  - first:
+      4: 400154
+    second: mesh_Roadworker
+  - first:
+      4: 400156
+    second: mesh_Robber
+  - first:
+      4: 400158
+    second: mesh_Sheriff
+  - first:
+      4: 400160
+    second: mesh_StreetMan
+  - first:
+      4: 400162
+    second: mesh_Trucker
+  - first:
+      4: 400164
+    second: mesh_Woman
+  - first:
+      4: 400166
+    second: Arm_Left_jnt
+  - first:
+      4: 400168
+    second: Arm_Right_jnt
+  - first:
+      4: 400170
+    second: CH_BusinessMan
+  - first:
+      4: 400172
+    second: CH_FireFighter
+  - first:
+      4: 400174
+    second: CH_Hobo
+  - first:
+      4: 400176
+    second: CH_Pimp
+  - first:
+      4: 400178
+    second: CH_Policeman
+  - first:
+      4: 400180
+    second: CH_Prostitute
+  - first:
+      4: 400182
+    second: CH_Punk
+  - first:
+      4: 400184
+    second: CH_RiotCop
+  - first:
+      4: 400186
+    second: CH_Roadworker
+  - first:
+      4: 400188
+    second: CH_Robber
+  - first:
+      4: 400190
+    second: CH_Sheriff
+  - first:
+      4: 400192
+    second: CH_StreetMan
+  - first:
+      4: 400194
+    second: CH_Trucker
+  - first:
+      4: 400196
+    second: CH_Woman
+  - first:
+      4: 400198
+    second: Chest_jnt
+  - first:
+      4: 400200
+    second: Forearm_Left_jnt
+  - first:
+      4: 400202
+    second: Forearm_Right_jnt
+  - first:
+      4: 400204
+    second: Neck_jnt
+  - first:
+      4: 400206
+    second: Shoulder_Left_jnt
+  - first:
+      4: 400208
+    second: Shoulder_Right_jnt
+  - first:
+      4: 400210
+    second: Spine_jnt 1
+  - first:
+      4: 400212
+    second: Toe_Left_jnt
+  - first:
+      4: 400214
+    second: Toe_Right_jnt
+  - first:
+      23: 2300000
+    second: Body
+  - first:
+      23: 2300002
+    second: Foot_Left
+  - first:
+      23: 2300004
+    second: Foot_Right
+  - first:
+      23: 2300006
+    second: GasMask
+  - first:
+      23: 2300008
+    second: Hair_Bobs
+  - first:
+      23: 2300010
+    second: Hair_Ponytail
+  - first:
+      23: 2300012
+    second: Hair_Punk
+  - first:
+      23: 2300014
+    second: Hair_Top
+  - first:
+      23: 2300016
+    second: Hand_Left
+  - first:
+      23: 2300018
+    second: Hand_Right
+  - first:
+      23: 2300020
+    second: Hat_Cap
+  - first:
+      23: 2300022
+    second: Hat_Cap_Backwards
+  - first:
+      23: 2300024
+    second: Hat_FireFighter
+  - first:
+      23: 2300026
+    second: Hat_Helmet
+  - first:
+      23: 2300028
+    second: Hat_Hobo
+  - first:
+      23: 2300030
+    second: Hat_Pimp
+  - first:
+      23: 2300032
+    second: Hat_Police
+  - first:
+      23: 2300034
+    second: Hat_Sheriff
+  - first:
+      23: 2300036
+    second: Head
+  - first:
+      23: 2300038
+    second: LowerArm_Left
+  - first:
+      23: 2300040
+    second: LowerArm_Right
+  - first:
+      23: 2300042
+    second: LowerBody
+  - first:
+      23: 2300044
+    second: LowerLeg_Left
+  - first:
+      23: 2300046
+    second: LowerLeg_Right
+  - first:
+      23: 2300048
+    second: Prop_Backpack
+  - first:
+      23: 2300050
+    second: Prop_FireFighterPack
+  - first:
+      23: 2300052
+    second: RiotHelmet
+  - first:
+      23: 2300054
+    second: UpperArm_Left
+  - first:
+      23: 2300056
+    second: UpperArm_Right
+  - first:
+      23: 2300058
+    second: UpperLeg_Left
+  - first:
+      23: 2300060
+    second: UpperLeg_Right
+  - first:
+      23: 2300062
+    second: WarHelmet
+  - first:
+      33: 3300000
+    second: Body
+  - first:
+      33: 3300002
+    second: Foot_Left
+  - first:
+      33: 3300004
+    second: Foot_Right
+  - first:
+      33: 3300006
+    second: GasMask
+  - first:
+      33: 3300008
+    second: Hair_Bobs
+  - first:
+      33: 3300010
+    second: Hair_Ponytail
+  - first:
+      33: 3300012
+    second: Hair_Punk
+  - first:
+      33: 3300014
+    second: Hair_Top
+  - first:
+      33: 3300016
+    second: Hand_Left
+  - first:
+      33: 3300018
+    second: Hand_Right
+  - first:
+      33: 3300020
+    second: Hat_Cap
+  - first:
+      33: 3300022
+    second: Hat_Cap_Backwards
+  - first:
+      33: 3300024
+    second: Hat_FireFighter
+  - first:
+      33: 3300026
+    second: Hat_Helmet
+  - first:
+      33: 3300028
+    second: Hat_Hobo
+  - first:
+      33: 3300030
+    second: Hat_Pimp
+  - first:
+      33: 3300032
+    second: Hat_Police
+  - first:
+      33: 3300034
+    second: Hat_Sheriff
+  - first:
+      33: 3300036
+    second: Head
+  - first:
+      33: 3300038
+    second: LowerArm_Left
+  - first:
+      33: 3300040
+    second: LowerArm_Right
+  - first:
+      33: 3300042
+    second: LowerBody
+  - first:
+      33: 3300044
+    second: LowerLeg_Left
+  - first:
+      33: 3300046
+    second: LowerLeg_Right
+  - first:
+      33: 3300048
+    second: Prop_Backpack
+  - first:
+      33: 3300050
+    second: Prop_FireFighterPack
+  - first:
+      33: 3300052
+    second: RiotHelmet
+  - first:
+      33: 3300054
+    second: UpperArm_Left
+  - first:
+      33: 3300056
+    second: UpperArm_Right
+  - first:
+      33: 3300058
+    second: UpperLeg_Left
+  - first:
+      33: 3300060
+    second: UpperLeg_Right
+  - first:
+      33: 3300062
+    second: WarHelmet
+  - first:
+      43: 4300000
+    second: Foot_Left
+  - first:
+      43: 4300002
+    second: LowerLeg_Left
+  - first:
+      43: 4300004
+    second: UpperLeg_Left
+  - first:
+      43: 4300006
+    second: Foot_Right
+  - first:
+      43: 4300008
+    second: LowerLeg_Right
+  - first:
+      43: 4300010
+    second: UpperLeg_Right
+  - first:
+      43: 4300012
+    second: Hat_Police
+  - first:
+      43: 4300014
+    second: Hat_FireFighter
+  - first:
+      43: 4300016
+    second: Hat_Cap_Backwards
+  - first:
+      43: 4300018
+    second: Hat_Helmet
+  - first:
+      43: 4300020
+    second: Hair_Bobs
+  - first:
+      43: 4300022
+    second: Hair_Ponytail
+  - first:
+      43: 4300024
+    second: Hair_Top
+  - first:
+      43: 4300026
+    second: Hat_Pimp
+  - first:
+      43: 4300028
+    second: Hair_Punk
+  - first:
+      43: 4300030
+    second: Hat_Sheriff
+  - first:
+      43: 4300032
+    second: Hat_Cap
+  - first:
+      43: 4300034
+    second: GasMask
+  - first:
+      43: 4300036
+    second: Hat_Hobo
+  - first:
+      43: 4300038
+    second: RiotHelmet
+  - first:
+      43: 4300040
+    second: WarHelmet
+  - first:
+      43: 4300042
+    second: Head
+  - first:
+      43: 4300044
+    second: Hand_Right
+  - first:
+      43: 4300046
+    second: LowerArm_Right
+  - first:
+      43: 4300048
+    second: UpperArm_Right
+  - first:
+      43: 4300050
+    second: Hand_Left
+  - first:
+      43: 4300052
+    second: LowerArm_Left
+  - first:
+      43: 4300054
+    second: UpperArm_Left
+  - first:
+      43: 4300056
+    second: Body
+  - first:
+      43: 4300058
+    second: Prop_Backpack
+  - first:
+      43: 4300060
+    second: Prop_FireFighterPack
+  - first:
+      43: 4300062
+    second: LowerBody
+  - first:
+      43: 4300064
+    second: Base_mesh
+  - first:
+      43: 4300066
+    second: Roadworker
+  - first:
+      43: 4300068
+    second: Prostitute
+  - first:
+      43: 4300070
+    second: BusinessMan
+  - first:
+      43: 4300072
+    second: Hobo
+  - first:
+      43: 4300074
+    second: Robber
+  - first:
+      43: 4300076
+    second: Woman
+  - first:
+      43: 4300078
+    second: Pimp
+  - first:
+      43: 4300080
+    second: Punk
+  - first:
+      43: 4300082
+    second: Sheriff
+  - first:
+      43: 4300084
+    second: FireFighter
+  - first:
+      43: 4300086
+    second: Trucker
+  - first:
+      43: 4300088
+    second: StreetMan
+  - first:
+      43: 4300090
+    second: Policeman
+  - first:
+      43: 4300092
+    second: RiotCop
+  - first:
+      43: 4300094
+    second: mesh_Base
+  - first:
+      43: 4300096
+    second: mesh_Roadworker
+  - first:
+      43: 4300098
+    second: mesh_Prostitute
+  - first:
+      43: 4300100
+    second: mesh_BusinessMan
+  - first:
+      43: 4300102
+    second: mesh_Hobo
+  - first:
+      43: 4300104
+    second: mesh_Robber
+  - first:
+      43: 4300106
+    second: mesh_Woman
+  - first:
+      43: 4300108
+    second: mesh_Pimp
+  - first:
+      43: 4300110
+    second: mesh_Punk
+  - first:
+      43: 4300112
+    second: mesh_Sheriff
+  - first:
+      43: 4300114
+    second: mesh_FireFighter
+  - first:
+      43: 4300116
+    second: mesh_Trucker
+  - first:
+      43: 4300118
+    second: mesh_StreetMan
+  - first:
+      43: 4300120
+    second: mesh_Policeman
+  - first:
+      43: 4300122
+    second: mesh_RiotCop
+  - first:
+      43: 4300124
+    second: CH_Roadworker
+  - first:
+      43: 4300126
+    second: CH_Hobo
+  - first:
+      43: 4300128
+    second: CH_Prostitute
+  - first:
+      43: 4300130
+    second: CH_BusinessMan
+  - first:
+      43: 4300132
+    second: CH_Robber
+  - first:
+      43: 4300134
+    second: CH_Woman
+  - first:
+      43: 4300136
+    second: CH_Pimp
+  - first:
+      43: 4300138
+    second: CH_Punk
+  - first:
+      43: 4300140
+    second: CH_Sheriff
+  - first:
+      43: 4300142
+    second: CH_FireFighter
+  - first:
+      43: 4300144
+    second: CH_Trucker
+  - first:
+      43: 4300146
+    second: CH_StreetMan
+  - first:
+      43: 4300148
+    second: CH_Policeman
+  - first:
+      43: 4300150
+    second: CH_RiotCop
+  - first:
+      74: 7400000
+    second: Idle
+  - first:
+      74: 7400002
+    second: Walk
+  - first:
+      74: 7400004
+    second: Run
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Base_mesh
+  - first:
+      137: 13700002
+    second: BusinessMan
+  - first:
+      137: 13700004
+    second: FireFighter
+  - first:
+      137: 13700006
+    second: Hobo
+  - first:
+      137: 13700008
+    second: Pimp
+  - first:
+      137: 13700010
+    second: Policeman
+  - first:
+      137: 13700012
+    second: Prostitute
+  - first:
+      137: 13700014
+    second: Punk
+  - first:
+      137: 13700016
+    second: RiotCop
+  - first:
+      137: 13700018
+    second: Roadworker
+  - first:
+      137: 13700020
+    second: Robber
+  - first:
+      137: 13700022
+    second: Sheriff
+  - first:
+      137: 13700024
+    second: StreetMan
+  - first:
+      137: 13700026
+    second: Trucker
+  - first:
+      137: 13700028
+    second: Woman
+  - first:
+      137: 13700030
+    second: mesh_Base
+  - first:
+      137: 13700032
+    second: mesh_BusinessMan
+  - first:
+      137: 13700034
+    second: mesh_FireFighter
+  - first:
+      137: 13700036
+    second: mesh_Hobo
+  - first:
+      137: 13700038
+    second: mesh_Pimp
+  - first:
+      137: 13700040
+    second: mesh_Policeman
+  - first:
+      137: 13700042
+    second: mesh_Prostitute
+  - first:
+      137: 13700044
+    second: mesh_Punk
+  - first:
+      137: 13700046
+    second: mesh_RiotCop
+  - first:
+      137: 13700048
+    second: mesh_Roadworker
+  - first:
+      137: 13700050
+    second: mesh_Robber
+  - first:
+      137: 13700052
+    second: mesh_Sheriff
+  - first:
+      137: 13700054
+    second: mesh_StreetMan
+  - first:
+      137: 13700056
+    second: mesh_Trucker
+  - first:
+      137: 13700058
+    second: mesh_Woman
+  - first:
+      137: 13700060
+    second: CH_BusinessMan
+  - first:
+      137: 13700062
+    second: CH_FireFighter
+  - first:
+      137: 13700064
+    second: CH_Hobo
+  - first:
+      137: 13700066
+    second: CH_Pimp
+  - first:
+      137: 13700068
+    second: CH_Policeman
+  - first:
+      137: 13700070
+    second: CH_Prostitute
+  - first:
+      137: 13700072
+    second: CH_Punk
+  - first:
+      137: 13700074
+    second: CH_RiotCop
+  - first:
+      137: 13700076
+    second: CH_Roadworker
+  - first:
+      137: 13700078
+    second: CH_Robber
+  - first:
+      137: 13700080
+    second: CH_Sheriff
+  - first:
+      137: 13700082
+    second: CH_StreetMan
+  - first:
+      137: 13700084
+    second: CH_Trucker
+  - first:
+      137: 13700086
+    second: CH_Woman
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 2
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 2
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 52
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 82
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 1
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hips_jnt
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Left_jnt
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Right_jnt
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Left_jnt
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Right_jnt
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Left_jnt
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Right_jnt
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_jnt
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_jnt 1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_jnt
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Left_jnt
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_Left_jnt
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm_Right_jnt
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm_Left_jnt
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm_Right_jnt
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Left_jnt
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Right_jnt
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest_jnt
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Right_jnt
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Left_jnt
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Right_jnt
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_jnt
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: SimplePeople(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_BusinessMan
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_FireFighter
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Hobo
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Policeman
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Punk
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_RiotCop
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Roadworker
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Robber
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Sheriff
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_StreetMan
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Trucker
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CH_Woman
+      parentName: SimplePeople(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips_jnt
+      parentName: SimplePeople(Clone)
+      position: {x: 3.6272008e-16, y: 1.0449876, z: -6.2692085e-18}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_jnt
+      parentName: Hips_jnt
+      position: {x: -0.019048661, y: -5.158743e-16, z: 6.2692085e-18}
+      rotation: {x: 6.9251656e-18, y: 2.7186337e-18, z: 9.345823e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_jnt 1
+      parentName: Spine_jnt
+      position: {x: -0.3360725, y: 3.7261742e-16, z: 2.3643465e-18}
+      rotation: {x: 0, y: 0, z: -1.6657682e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Chest_jnt
+      parentName: Spine_jnt 1
+      position: {x: -0.33425274, y: -1.2999511e-15, z: -2.3643465e-18}
+      rotation: {x: 1.5444892e-33, y: 7.628354e-34, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_jnt
+      parentName: Chest_jnt
+      position: {x: -0.22895189, y: 4.2216863e-16, z: 5.667284e-19}
+      rotation: {x: 0, y: 0, z: -1.6653345e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_jnt
+      parentName: Neck_jnt
+      position: {x: -0.08167417, y: -5.9802247e-16, z: -5.667284e-19}
+      rotation: {x: 7.729368e-34, y: -3.8001317e-34, z: 2.220446e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_Left_jnt
+      parentName: Chest_jnt
+      position: {x: -0.21910845, y: -0.27274165, z: 0.0076430403}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 4.3352284e-17, w: -4.3243328e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm_Left_jnt
+      parentName: Shoulder_Left_jnt
+      position: {x: 0.29249033, y: 2.2737367e-15, z: 0.0076430403}
+      rotation: {x: 1, y: 1.1714262e-15, z: -4.588833e-20, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Forearm_Left_jnt
+      parentName: Arm_Left_jnt
+      position: {x: 0.471, y: 0.016, z: 0}
+      rotation: {x: 0, y: 0, z: -3.1086245e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Left_jnt
+      parentName: Forearm_Left_jnt
+      position: {x: 0.4403, y: 0, z: 5.39209e-17}
+      rotation: {x: -1.7636465e-13, y: 1, z: -7.2736614e-16, w: -2.2837224e-15}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_Right_jnt
+      parentName: Chest_jnt
+      position: {x: -0.21910845, y: 0.27274165, z: -0.0076430403}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 4.3352284e-17, w: -4.3243328e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Arm_Right_jnt
+      parentName: Shoulder_Right_jnt
+      position: {x: -0.29249033, y: 1.7053025e-15, z: -0.0076430403}
+      rotation: {x: -5.404528e-21, y: 5.170119e-19, z: 3.380434e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Forearm_Right_jnt
+      parentName: Arm_Right_jnt
+      position: {x: -0.47118998, y: 5.684342e-16, z: -5.770413e-17}
+      rotation: {x: -6.627657e-19, y: -3.5869217e-21, z: -2.4398886e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Right_jnt
+      parentName: Forearm_Right_jnt
+      position: {x: -0.4403, y: -8.5265126e-16, z: -5.3921198e-17}
+      rotation: {x: 1.4483431e-13, y: 1, z: -1.1714554e-15, w: 1.7466429e-15}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Left_jnt
+      parentName: Hips_jnt
+      position: {x: 0.12891708, y: -0.221588, z: -0.017863873}
+      rotation: {x: -0.011695495, y: -0.00040235356, z: 0.9999314, w: 0.00046159796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Left_jnt
+      parentName: UpperLeg_Left_jnt
+      position: {x: -0.37452164, y: -3.5527136e-17, z: -2.7105054e-22}
+      rotation: {x: -0.7075902, y: 0.0000064468913, z: -0.0000061459123, w: 0.706623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Left_jnt
+      parentName: LowerLeg_Left_jnt
+      position: {x: -0.38874373, y: 1.2252568e-17, z: 7.3426066e-12}
+      rotation: {x: 0.50674546, y: 0.49426782, z: -0.50519735, w: 0.4936436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toe_Left_jnt
+      parentName: Foot_Left_jnt
+      position: {x: -6.72415e-12, y: -0.1497335, z: 0.21969701}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Right_jnt
+      parentName: Hips_jnt
+      position: {x: 0.12891664, y: 0.22158809, z: 0.01786388}
+      rotation: {x: 0.9999078, y: 0.0005809014, z: -0.011708393, w: 0.006858115}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Right_jnt
+      parentName: UpperLeg_Right_jnt
+      position: {x: 0.374522, y: 2.4868996e-16, z: -1.0987412e-12}
+      rotation: {x: -0.70410997, y: -0.000030960506, z: 0.00005181963, w: 0.71009094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Right_jnt
+      parentName: LowerLeg_Right_jnt
+      position: {x: 0.388744, y: 8.197135e-12, z: -3.6907224e-11}
+      rotation: {x: 0.4958342, y: 0.5067274, z: -0.49273258, w: 0.50456953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Toe_Right_jnt
+      parentName: Foot_Right_jnt
+      position: {x: -0.000003490797, y: 0.1497333, z: -0.21969701}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
