@@ -9,7 +9,6 @@ public class SpriteAnim : MonoBehaviour
     public List<Sprite> sprites;
     public float animSpeed = 1;
     private int index;
-    private bool isDone;
 
     // Start is called before the first frame update
     void Start()

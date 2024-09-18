@@ -5,6 +5,8 @@ using Cinemachine;
 
 public class Cutscene : MonoBehaviour
 {
+    public bool cutscene = true;
+
     [Header("Cameras")]
     public GameObject mainCam;
     public GameObject startCam;
@@ -14,18 +16,22 @@ public class Cutscene : MonoBehaviour
 
     void Awake()
     {
-        DisableCams();
+        if(cutscene) DisableCams();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(CutsceneStart());
+        if(cutscene) 
+            StartCoroutine(CutsceneStart());
+        else
+            StartGame();
     }
 
     void Update()
     {
-        CutsceneEnd();
+        if(cutscene)
+            CutsceneEnd();
     }
 
     void DisableCams()
@@ -45,11 +51,16 @@ public class Cutscene : MonoBehaviour
         startCam.SetActive(false);
         mainCam.SetActive(true);
         yield return new WaitForSeconds(1);
-        PlayerController.Instance.canMove = true;
-        Settings.Instance.HideAndShowPauseButtonIcon(true);
-        ItemManager.Instance.ShowTutorial();
+        StartGame();
     }
 
+    void StartGame()
+    {
+        PlayerController.Instance.canMove = true;
+        Settings.Instance.HideAndShowPauseButtonIcon(true);
+    }
+
+    //When win the game
     void CutsceneEnd()
     {
         endCam = GameObject.FindGameObjectWithTag("End Cam").GetComponent<CinemachineVirtualCamera>();

@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Save;
 
 public class LevelManager : MonoBehaviour
 {
+    private SaveManager save;
+    
     [Header("Spawn Level")]
-    public SOLevelManager soLevelManager;
     public Transform container;
     public int index;
 
@@ -19,25 +21,18 @@ public class LevelManager : MonoBehaviour
     public float durationScale = .2f;
     public float timeBetweenPieces = .3f;
 
-    
-
-    void Awake()
-    {
-        index = soLevelManager.currLevel;
-    }
-
     void Start()
     {
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
+
+        index = save.saveLayout.level.currLevel;
         SpawnLevelPiece();
     }
 
     void Update()
     {
         NextPhase();
-
-        
     }
-
     
     public void SpawnLevelPiece()
     {
@@ -121,8 +116,8 @@ public class LevelManager : MonoBehaviour
 
     void NextPhase()
     {
-        if(PlayerController.Instance.finish && soLevelManager.value < currentLevelPieceSetup[index].phaseLvl)
-        soLevelManager.value = currentLevelPieceSetup[index].phaseLvl;
+        if(PlayerController.Instance.finish && save.saveLayout.level.levelsUnlockeds < currentLevelPieceSetup[index].phaseLvl)
+            save.saveLayout.level.levelsUnlockeds = currentLevelPieceSetup[index].phaseLvl;
     }
 
     

@@ -6,11 +6,11 @@ using System.Linq;
 
 public class CoinsFlyManager : MonoBehaviour
 {
+    public PowerUpFly pwupFly;
     public SpawnHelper spawn;
     public Coin coin;
     private List<Coin> _spawnedCoin = new List<Coin>();
     public Transform startPos;
-    public SOFlyPowerUp SOFly;
 
     public float timeBetweenCoin = 0.5f;
 
@@ -18,10 +18,11 @@ public class CoinsFlyManager : MonoBehaviour
     {
         SpawnCoins();
     }
-    
-    void SpawnCoins()
+
+    [NaughtyAttributes.Button]
+    public void SpawnCoins()
     {
-        for(int i = 0; i < SOFly.coinsToAdd; i++)
+        for(int i = 0; i < pwupFly.coinsToAdd; i++)
         {
             SpawnNextCoin();
         }

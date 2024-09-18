@@ -14,4 +14,9 @@ public class FloatAnim : MonoBehaviour
     {
         transform.DOLocalMoveY(y, duration).SetDelay(delay).SetEase(ease).SetLoops(-1, LoopType.Yoyo).SetRelative();
     }
+
+    void OnDestroy()
+    {
+        transform.DOKill();
+    }
 }

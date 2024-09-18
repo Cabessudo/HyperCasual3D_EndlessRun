@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Save;
 using UnityEngine;
 
 public class PowerUpBase : ItemCollatablesBase
 {
-    public SOPowerupsLvls soPWUPLevel;
-    public MeshRenderer powerUp;
+    protected SaveManager save;
+    public PowerupType pwupType;
+    // public SOPowerupsLvls soPWUPLevel;
+    protected MeshRenderer powerUpMesh;
     protected ParticleSystem particle;
     public float duration;
     public string particleTag;
@@ -16,10 +19,12 @@ public class PowerUpBase : ItemCollatablesBase
 
     public virtual void Start()
     {
-        particle = GameObject.FindGameObjectWithTag(particleTag).GetComponent<ParticleSystem>();
-        powerUp = GetComponent<MeshRenderer>();
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
 
-        for(int i = 0; i < soPWUPLevel.currLevel; i++)
+        particle = GameObject.FindGameObjectWithTag(particleTag).GetComponent<ParticleSystem>();
+        powerUpMesh = GetComponent<MeshRenderer>();
+
+        for(int i = 0; i < save.GetPowerupSaveByType(pwupType).currLevel; i++)
         {
             duration += 1;
         }
@@ -28,28 +33,24 @@ public class PowerUpBase : ItemCollatablesBase
     public override void OnCollect()
     {
         StartPowerUp();
-        soPWUPLevel.amountCollected++;
+        save.GetPowerupSaveByType(pwupType).amountCollected++;
     }
 
     public override void Collect()
     {
         base.Collect();
-        if(obj != null)
-        {
-            obj.SetActive(false);
-        }
     }
 
     protected virtual void StartPowerUp()
     {
         PlayerController.Instance.currPWUPSCollecteds++;
         Debug.Log("Start Power Up!!!");
-        powerUp.enabled = false;
+        powerUpMesh.enabled = false;
         if(particle != null) particle.Play();
         Invoke(nameof(EndPowerUp), duration);
         Invoke(nameof(StopParticle), duration / 2);
-        if(soPWUPLevel.amountCollected <= 0)
-        ItemManager.Instance.FirstTimeCollect(pwupSprite, pwupTxt, pwupRotation);
+        if(save.GetPowerupSaveByType(pwupType).amountCollected <= 0)
+            ItemManager.Instance.FirstTimeCollect(pwupSprite, pwupTxt, pwupRotation);
     }
 
     protected virtual void EndPowerUp()

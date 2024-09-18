@@ -11,7 +11,7 @@ public class CrossThePath : MonoBehaviour
     protected int _randomObj;
 
     [Header("Player Check")]
-    public string tagToCompare = "Player";
+    private string playerTag = "Player";
     protected bool _onRadious;
 
     [Header("Animation")]
@@ -33,19 +33,13 @@ public class CrossThePath : MonoBehaviour
     {
         _randomObj = Random.Range(0, obj.Length);
         _randomAnim = Random.Range(0, animType.Count);
-        if(!outRoad)
-        sfx = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+        if(!outRoad) sfx = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(dead)
-        {
-            StopAllCoroutines();
-            _currAnim.SetTrigger("Dead");
-            // AnimSpeed(true);
-        }
 
         if(_onRadious && !dead)
         {
@@ -53,21 +47,21 @@ public class CrossThePath : MonoBehaviour
             StartCoroutine(Movement());
         }
 
-        if(!Settings.Instance.onSettings && one)
+        if(!Settings.Instance.onSettings && one && !dead)
         {
             StartCoroutine(Movement());
-            AnimSpeed(false);
+            StopPedestrian(false);
         }
-        else if(Settings.Instance.onSettings && one)
+        else if(Settings.Instance.onSettings && one || dead)
         {
             StopAllCoroutines();
-            AnimSpeed(true);
+            StopPedestrian(true);
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag(tagToCompare))
+        if(other.gameObject.CompareTag(playerTag))
         {
             _onRadious = true;
         }
@@ -104,14 +98,14 @@ public class CrossThePath : MonoBehaviour
         rb = GetComponentInChildren<Rigidbody>();
     }
 
-    public void AnimSpeed(bool pause)
+    public void StopPedestrian(bool pause)
     {
         if(_currAnim != null)
         {
             if(pause)
-            _currAnim.speed = 0;
+                _currAnim.speed = 0;
             else
-            _currAnim.speed = 1;
+                _currAnim.speed = 1;
         }
     }
 

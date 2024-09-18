@@ -8,31 +8,30 @@ public class Car : MonoBehaviour
     public BoxCollider carHitBox;
     public GameObject lights;
     public ParticleSystem explosionVFX;
-    
+    public AudioSource honkSFX;
 
     [Header("Parameters")]
     public float speed = 5;
 
     //Player
+    public float offset;
     public LayerMask player;
     public bool checkPlayer;
     public float playerDis = 1;
-
-    //Obstacle
-    public LayerMask obstacle;
-    public float obstacleDis = 1;  
 
     //Honk and Lights
     public float timeFlash = .35f;
     private bool honk;
     public bool blink;
 
-    [Header("Audio")]
-    public AudioSource honkSFX;
+    //Obstacles
+    private string obstacleTag = "Obstacle";
+    private string pedestrianTag = "Pedestrian";
+    
+
 
     void Update()
     {
-        CheckObstacle();
         Check();
         
         if(!Settings.Instance.onSettings)
@@ -58,19 +57,6 @@ public class Car : MonoBehaviour
         }
     }
 
-    public void CheckObstacle()
-    {
-        RaycastHit hit;
-
-        if(Physics.Raycast(carHitBox.transform.position, carHitBox.transform.forward, out hit, obstacleDis, obstacle))
-        {
-            Obstacle obs = hit.transform.GetComponent<Obstacle>();
-            if(obs != null)
-            obs.DestroyObstacle();
-        }
-        
-    }
-
     void Movement(float currSpeed = 0)
     {
         transform.Translate(Vector3.forward * currSpeed * Time.deltaTime);
@@ -78,7 +64,7 @@ public class Car : MonoBehaviour
 
     void Check()
     {
-        checkPlayer = Physics.Raycast(carHitBox.transform.position, carHitBox.transform.forward, playerDis, player);
+        checkPlayer = Physics.Raycast(carHitBox.transform.position, carHitBox.transform.forward + Vector3.up * offset, playerDis, player);
     }
 
     public void ExplodeCar()
@@ -104,12 +90,18 @@ public class Car : MonoBehaviour
         }
     }
 
-    void Honk()
+    void OnCollisionEnter(Collision collision)
     {
-        if(honk)
+        if(collision.gameObject.CompareTag(obstacleTag))
         {
-            honkSFX.Play();
-            honk = false;
+            Obstacle obs = collision.transform.GetComponent<Obstacle>();
+            obs?.DestroyObstacle();
+        }
+
+        if(collision.gameObject.CompareTag(pedestrianTag))
+        {
+            Pedestrian ped = collision.transform.GetComponent<Pedestrian>();
+            ped.Death();
         }
     }
 }

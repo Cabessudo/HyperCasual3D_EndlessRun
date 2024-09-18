@@ -306,12 +306,6 @@ public class PlayerController : Singleton<PlayerController>
     {
         _bounce.Bounce();
     }
-    
-
-    void ShowAndAddCoinsCollecteds()
-    {
-        StartCoroutine(ItemManager.Instance.UpdateCoins());
-    }
     #endregion
 
     #region Game Over

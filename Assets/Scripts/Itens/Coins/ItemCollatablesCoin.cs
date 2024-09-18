@@ -18,8 +18,7 @@ public class ItemCollatablesCoin : ItemCollatablesBase
     {
         sfx = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
-        if(CoinsAnimation.Instance != null)
-        CoinsAnimation.Instance.RegisterCoins(this);
+        CoinsAnimation.Instance?.RegisterCoins(this);
 
         render = GetComponentInChildren<MeshRenderer>();
     }

@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    public BoxCollider boxCollider;
     public MeshRenderer obstacleRender;
     public ParticleSystem destroyedVFX;
+    private bool once = false;
 
     public void DestroyObstacle()
     {
-        obstacleRender.enabled = false;
-        destroyedVFX.Play();
+        if(!once)
+        {
+            once = true;
+            boxCollider.enabled = false;            
+            obstacleRender.enabled = false;
+            destroyedVFX.Play();
+        }
     }
 }

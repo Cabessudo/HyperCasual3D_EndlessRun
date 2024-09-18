@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PowerUpFly : PowerUpBase
 {
-    [Header("Fly")]
+    [Header("Fly Parameters")]
     public DG.Tweening.Ease easeFly = DG.Tweening.Ease.OutBack;
-    public SOFlyPowerUp SOFly;
-    public float flyHeight = 3;
-    private int coinsToAddDefault = 7;
+
+    public float flyHeight = 11;
+    public int coinsToAdd = 7;
+    public float delayToLand = 1;
 
     [Header("Change Color")]
     public List<Material> colors;
@@ -22,12 +23,10 @@ public class PowerUpFly : PowerUpBase
         base.Start();
 
         //PWUP Fly Level
-        SOFly.coinsToAdd = coinsToAddDefault;
-        SOFly.delayToLand = duration;
-        for(int i = 0; i < soPWUPLevel.currLevel; i++)
+        for(int i = 0; i < save.GetPowerupSaveByType(pwupType).currLevel; i++)
         {
-            SOFly.delayToLand += .25f;
-            SOFly.coinsToAdd += 4;
+            duration += .25f;
+            coinsToAdd += 4;
         }
 
         //Set Ballon Random Color
@@ -37,13 +36,12 @@ public class PowerUpFly : PowerUpBase
     protected override void StartPowerUp()
     {
         base.StartPowerUp();
-        PlayerController.Instance.Fly(flyHeight, SOFly.flyDuration, SOFly.delayToLand, easeFly);
+        PlayerController.Instance.Fly(flyHeight, duration, delayToLand, easeFly);
         SpawnCoinCase();
     }
 
     void SpawnCoinCase()
     {
-        Vector3 coinPos = new Vector3(0, flyHeight + 2.5f, transform.position.z);
-        Instantiate(coinCase, coinPos, coinCase.transform.rotation);
+        coinCase.SetActive(true);
     }
 }

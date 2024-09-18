@@ -109,6 +109,14 @@ public class RestartScreen : Singleton<RestartScreen>
     }
 
     #endregion
+
+    void OnDestroy()
+    {
+        cogratulationsText?.transform.DOKill();
+        failText.transform.DOKill();
+        restartText?.transform.DOKill();
+        currEndSetup?.icon.transform.DOKill();
+    }
 }
 
 [System.Serializable]

@@ -5,22 +5,22 @@ using Ebac.Core.Singleton;
 using DG.Tweening;
 using UnityEngine.UI;
 using TMPro;
+using Save;
 
 public class ItemManager : Singleton<ItemManager>
 { 
+    private SaveManager save;
 
     public LoadScene scene;
     public TransitionScene transition;
-    public SOInt coins;
     public TextMeshProUGUI coinText;
     public int inGameCoins;
     public TextMeshProUGUI inGameCoinsEndText;
     public TextMeshProUGUI inGameCoinsText;
 
     [Header("Coin Anim")]
-    public SpawnHelper spawn;
     //Spawn Coins Anim
-    public GameObject inGameCoinsCase;
+    public RectTransform inGameCoinsCase;
     public List<GameObject> coinsCase;
     public GameObject coinsHolder;
     public GameObject coinToSpawn;
@@ -32,13 +32,13 @@ public class ItemManager : Singleton<ItemManager>
     private float delayToSpawn = .1f;
     private int index;
     private bool showInGameCoins;
-    private float scaleBounceAnim = 1.1f;
-    private float menuCoinIn = 975;
-    private float inGameEndCoinIn = 440;
+    private float scaleBounceAnim = 1.2f;
+    private float menuCoinIn = 475;
+    private float inGameEndCoinIn = 0;
     private bool canTransition;
 
     [Header("PWUP Firt Time Collect")]
-    public GameObject pwupFirtCollect;
+    public GameObject pwupFirstCollect;
     public Image pwupIcon;
     public Image alphaColor;
     public TextMeshProUGUI pwupTxt;
@@ -53,16 +53,11 @@ public class ItemManager : Singleton<ItemManager>
     [Header("Audio")]
     public AudioManager sfx;
     public AudioMenu sfxUI;
-
-    [Header("Tutorial")]
-    public SOLevelManager soLevelManager;
-    public GameObject howToPlayText;
-    private bool showedTutorial;
-    private Ease easeBounce = Ease.OutBounce;
-    private Ease easeLinear = Ease.Linear;
-
+    
     void Start()
     {
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
+        
         coinsCase = new List<GameObject>();
         for(int i = 0; i < amountCoins; i++)
         {
@@ -97,12 +92,6 @@ public class ItemManager : Singleton<ItemManager>
             HideFirstTimeCollect();
             sfx.ShowAndHideFirstTimeGetPWUPSFX(false);
         }
-
-        if(Input.GetKeyDown(KeyCode.Mouse0) && showedTutorial && once)
-        {
-            once = false;
-            HideTutorial();
-        }
     }
 
     public void AddCoins(int manager = 1)
@@ -111,7 +100,7 @@ public class ItemManager : Singleton<ItemManager>
         CollectAnim();
 
         if(showInGameCoins)
-        Bounce(inGameCoinsCase.transform, scaleBounceAnim);
+        Bounce(inGameCoinsCase, scaleBounceAnim);
         
     }
 
@@ -124,12 +113,12 @@ public class ItemManager : Singleton<ItemManager>
         Bounce(whereToSpawn.transform, .9f);
         sfxUI.CoinClick();
         inGameCoins--;
-        coinsCase[index].transform.position = whereToSpawn.transform.position;
+        coinsCase[index].transform.position = whereToSpawn.transform.position + Vector3.left * 100;
         coinsCase[index].transform.DOMove(whereToGo.transform.position, .9f).SetEase(ease).OnComplete(
             delegate
             {
                 Bounce(whereToGo.transform, scaleBounceAnim);
-                coins.value++;
+                save.saveLayout.coins.value++;
                 sfx.CoinSFX();
             });                
     }
@@ -144,15 +133,16 @@ public class ItemManager : Singleton<ItemManager>
     public void CollectedCoins()
     {
         inGameCoinsEndText.SetText("x" + inGameCoins);
-        coinText.SetText("" + coins.value);
+        coinText.SetText("" + save.saveLayout.coins.value);
         inGameCoinsText.SetText("" + inGameCoins);
     }
 
-    void ShowEndCoinsAnim()
+    [NaughtyAttributes.Button]
+    public void ShowEndCoinsAnim()
     {
         sfxUI.Appear();
-        whereToGo.transform.DOMoveX(menuCoinIn, .7f).SetEase(ease);
-        whereToSpawn.transform.DOMoveX(inGameEndCoinIn, .7f).SetEase(ease);
+        whereToGo.transform.DOLocalMoveX(menuCoinIn, .7f).SetEase(ease);
+        whereToSpawn.transform.DOLocalMoveX(inGameEndCoinIn, .7f).SetEase(ease);
     }
 
     void GetCoinsAnim()
@@ -185,19 +175,20 @@ public class ItemManager : Singleton<ItemManager>
     #region Collect Coins In Game Anim
     public void CollectAnim()
     {
+        StopAllCoroutines();
+
         if(!showInGameCoins)
         {
-            inGameCoinsCase.transform.DOLocalMoveY(490, .1f).SetEase(ease);
+            inGameCoinsCase.DOMoveY(-140, .1f).SetEase(ease).SetRelative();
             showInGameCoins = true;
 
-            StopAllCoroutines();
             StartCoroutine(HideCoinsCollectRoutine());
         }
     }
     
     public void HideCoinsInGameText()
     {
-        inGameCoinsCase.transform.DOLocalMoveY(700, .1f).SetEase(ease);
+        inGameCoinsCase.DOMoveY(140, .1f).SetEase(ease).SetRelative();
     }
 
     void Bounce(Transform t, float scale)
@@ -224,7 +215,7 @@ public class ItemManager : Singleton<ItemManager>
         pwupIcon.sprite = sprite;
         sfx.ShowAndHideFirstTimeGetPWUPSFX(true);
         pwupIcon.transform.DORotate(new Vector3(zero,zero,z), .2f).SetEase(ease);
-        pwupFirtCollect.transform.DOScale(one, .7f).SetEase(Ease.OutBack).OnComplete(
+        pwupFirstCollect.transform.DOScale(one, .7f).SetEase(Ease.OutBack).OnComplete(
             delegate
             {
                 alphaColor.DOColor(new Color(whiteColor,whiteColor,whiteColor,zero), .2f).SetEase(ease).OnComplete(
@@ -243,40 +234,19 @@ public class ItemManager : Singleton<ItemManager>
             Settings.Instance.HideAndShowPauseButtonIcon(true);
             Time.timeScale = one;
             Settings.Instance.backGround.SetActive(false);
-            pwupFirtCollect.transform.DOScale(zero, .7f).SetEase(Ease.OutBack);
+            pwupFirstCollect.transform.DOScale(zero, .7f).SetEase(Ease.OutBack);
             canInteract = false;
         }
     }
     #endregion
 
-    #region  Tutorial
-
-    public void ShowTutorial()
+    void OnDestroy()
     {
-        if(soLevelManager.currLevel == 0 && showedTutorial == false)
-        {
-            once = true;
-            Settings.Instance.HideAndShowPauseButtonIcon();
-            Settings.Instance.backGround.SetActive(true);
-            sfxUI.Appear();
-            howToPlayText.transform.DOScale(1, 1).SetEase(easeBounce).OnComplete(
-                delegate
-                {
-                    showedTutorial = true;
-                    Time.timeScale = 0;
-                });
-        }
+        if(pwupFirstCollect != null)pwupFirstCollect.transform.DOKill();
+        alphaColor?.DOKill();
+        pwupIcon?.transform.DOKill();
+        inGameCoinsCase?.DOKill();
+        whereToGo?.transform.DOKill();
+        whereToSpawn?.transform.DOKill();
     }
-
-    void HideTutorial()
-    {
-        Settings.Instance.HideAndShowPauseButtonIcon(true);
-        Settings.Instance.backGround.SetActive(false);
-        Time.timeScale = 1;
-        sfxUI.Disappear();
-        howToPlayText.transform.DOScale(0, .1f).SetEase(easeLinear).OnComplete(
-            delegate{howToPlayText.SetActive(false);});
-    }
-
-    #endregion
 }

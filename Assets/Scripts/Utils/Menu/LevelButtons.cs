@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Save;
 
 
 public class LevelButtons : MonoBehaviour
 {
+    private SaveManager save;
     public TransitionScene transition;
     
     [Header("Audio")]
@@ -15,7 +17,6 @@ public class LevelButtons : MonoBehaviour
     [Header("Level")]
     public GameObject lvlButtonsCase;
     public LevelButtonsAnim anim;
-    public SOLevelManager soLevelManager;
     public int level;
     private bool once;
 
@@ -23,16 +24,21 @@ public class LevelButtons : MonoBehaviour
     private float duration = .1f;
     private float scale = 1.1f;
 
+    void Start()
+    {
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
+    }
+
     public void Interact()
     {
         if(!Settings.Instance.onSettings)
         {
-            if(level > soLevelManager.value)
+            if(level > save.saveLayout.level.levelsUnlockeds)
             {
                 sfx.Locked();
                 anim.LockedButton(transform);
             }
-            else if(level <= soLevelManager.value && !once)
+            else if(level <= save.saveLayout.level.levelsUnlockeds && !once)
             {
                 Settings.Instance.HideAndShowPauseButtonIcon();
                 sfx.Disappear();
@@ -45,19 +51,23 @@ public class LevelButtons : MonoBehaviour
                 anim.BounceButton(transform, scale, duration);
                 anim.MoveBusForwardAnim();
                 transition.CloseScene(2);
-                Invoke(nameof(Play), 5);
+                SetLevel(); 
+                Invoke(nameof(Load), 5);
             }   
         }
     }
 
-    public void Play()
+    public void SetLevel()
     {
-        if(level <= soLevelManager.value)
+        if(level <= save.saveLayout.level.levelsUnlockeds)
         {
-            soLevelManager.currLevel = level;
-            SceneManager.LoadScene(1);
+            save.saveLayout.level.currLevel = level;
+            save.Save();
         }
     }
 
-    
+    void Load()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

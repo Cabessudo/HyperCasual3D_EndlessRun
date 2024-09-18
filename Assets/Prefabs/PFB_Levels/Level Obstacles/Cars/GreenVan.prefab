@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 9066881824870065742}
   - component: {fileID: 1478770449}
   - component: {fileID: 5869439151081443197}
+  - component: {fileID: 5017405637863320662}
   m_Layer: 0
   m_Name: GreenVan
   m_TagString: Car
@@ -185,8 +186,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3414497, y: 2.428693, z: 4.541297}
-  m_Center: {x: 0.03560072, y: 1.6, z: -0.26878977}
+  m_Size: {x: 2.3, y: 2.5, z: 5.0838556}
+  m_Center: {x: -0, y: 1.5, z: -0.1}
 --- !u!114 &1478770449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,19 +203,16 @@ MonoBehaviour:
   carHitBox: {fileID: 9066881824870065742}
   lights: {fileID: 6803998951508163709}
   explosionVFX: {fileID: 19800000, guid: 6634ebfd81291424dbbce4da06e6ce77, type: 3}
+  honkSFX: {fileID: 5869439151081443197}
   speed: 5
+  offset: 0.3
   player:
     serializedVersion: 2
     m_Bits: 8
   checkPlayer: 0
-  playerDis: 25
-  obstacle:
-    serializedVersion: 2
-    m_Bits: 64
-  obstacleDis: 1
-  timeFlash: 0.7
+  playerDis: 30
+  timeFlash: 0.5
   blink: 0
-  honkSFX: {fileID: 5869439151081443197}
 --- !u!82 &5869439151081443197
 AudioSource:
   m_ObjectHideFlags: 0
@@ -312,6 +310,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &5017405637863320662
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051863116098104297}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9051863116098263587
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +587,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1580945826531702305, guid: 4e22bae4e79906b4295a39fa7b22dea1,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3879369737615065035, guid: 4e22bae4e79906b4295a39fa7b22dea1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -616,7 +635,7 @@ PrefabInstance:
     - target: {fileID: 6270600562859799471, guid: 4e22bae4e79906b4295a39fa7b22dea1,
         type: 3}
       propertyPath: m_Intensity
-      value: 4
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6495054828654731896, guid: 4e22bae4e79906b4295a39fa7b22dea1,
         type: 3}
@@ -707,6 +726,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421598442807071088, guid: 4e22bae4e79906b4295a39fa7b22dea1,
+        type: 3}
+      propertyPath: m_Range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154552834649947648, guid: 4e22bae4e79906b4295a39fa7b22dea1,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e22bae4e79906b4295a39fa7b22dea1, type: 3}

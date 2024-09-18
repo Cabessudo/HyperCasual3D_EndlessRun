@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToCompare: Player
-  soPWUPLevel: {fileID: 11400000, guid: 8ea4cd89cd9cd274ca78c20676c13697, type: 2}
+  pwupType: 2
   powerUp: {fileID: 510049425121031546}
   duration: 3
   particleTag: Magnet

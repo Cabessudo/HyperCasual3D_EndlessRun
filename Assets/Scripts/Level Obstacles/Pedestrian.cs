@@ -7,8 +7,9 @@ public class Pedestrian : MonoBehaviour
     private CrossThePath _pedestrianParent;
     private BoxCollider _box;
     private Rigidbody _pedestrianRb;
-    private string deathTrigger = "Dead";
     private Animator _pedestrianAnim;
+    private string deathTrigger = "Dead";
+    private string playerTag = "Player";
 
     void Start()
     {
@@ -18,14 +19,19 @@ public class Pedestrian : MonoBehaviour
         _box = GetComponent<BoxCollider>();
     }
 
+    public void Death()
+    {
+        if(_pedestrianParent != null) _pedestrianParent.dead = true;
+        _pedestrianAnim.SetTrigger(deathTrigger);
+        _pedestrianRb.useGravity = false;
+        _box.enabled = false; 
+    }
+
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag(_pedestrianParent.tagToCompare))
+        if(collision.gameObject.CompareTag(playerTag))
         {
-            _pedestrianParent.dead = true;
-            _pedestrianAnim.SetTrigger(deathTrigger);
-            _pedestrianRb.useGravity = false;
-            _box.enabled = false; 
+            Death();
         }
     }
 }

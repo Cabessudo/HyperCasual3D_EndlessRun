@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Save;
+using System.Linq;
 
 public class MenuManager : MonoBehaviour
 {
-    
-    public SOLevelManager soLevelManager;
+    private SaveManager save;
 
     [Header("Audio")]
     public AudioMenu sfx;
@@ -20,7 +21,6 @@ public class MenuManager : MonoBehaviour
     public int buttonsAvailable;
 
     //PWUP Level
-    public GameObject[] currCoin;
     public GameObject[] charPWUPs;
     public Image[] iconsCase;
 
@@ -32,21 +32,21 @@ public class MenuManager : MonoBehaviour
     public float duration = 1;
     public float delayToShow = 1;
     //PWUP Level
-    private float inX = -375;
-    private float outX = -1050;
-    //UnLock to Increase PWUP's
-    public SOPowerupsLvls[] soPowerupsLvls;
-    
+    private float inPwupX = 0;
+    private float outPwupX = -1000;
     
 
     void Start()
     {
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
+        
         StartCoroutine(anim.FloatAnim(iconsCase));
         foreach(var lvlButtons in levelsButtonsCase.GetComponentsInChildren<Image>())
         Invoke(nameof(LevelUnlocked), 1);
         StartCoroutine(anim.FloatAnim(iconsCase));
     }
 
+    #region  Level Buttons
     public void ShowLevels(bool main)
     {
         //if main is false show lvls buttons else show the main buttons
@@ -74,48 +74,13 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void ShowCharPWUP(bool main)
-    {
-        if(!Settings.Instance.onSettings)
-        {
-            if(main)
-            {
-                StartCoroutine(sfx.DisappearRoutine(charPWUPs.Length));
-                cam.ChangeCam(main);
-                StartCoroutine(anim.ShowAndHideCharPWUPs(charPWUPs, outX, .1f));
-                StartCoroutine(anim.ShowAndHideCharPWUPs(currCoin, 750, .3f));
-                foreach(var b in mainButtons.GetComponentsInChildren<Image>())
-                spawn.Spawn(b.transform, delayToShow);
-            }
-            else
-            {
-                StartCoroutine(sfx.AppearRoutine(charPWUPs.Length));
-                cam.ChangeCam(main);
-                StartCoroutine(anim.ShowAndHideCharPWUPs(charPWUPs, inX, .1f));
-                StartCoroutine(anim.ShowAndHideCharPWUPs(currCoin, 450, .3f));
-                UnlockPWUPLvl();
-                foreach(var b in mainButtons.GetComponentsInChildren<Image>())
-                anim.Hide(b, duration);
-            }
-        }
-    }
-
-    void UnlockPWUPLvl()
-    {
-        foreach(var pwups in soPowerupsLvls)
-        {
-            if(pwups.amountCollected >= 1)
-            pwups.unlock = true;
-        }
-    }
-
     void UnlockLvl()
     {
-        for(int i = 0; i < soLevelManager.value; i++)
+        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds; i++)
         {
-            if(!lvlButtonSetup[i].unlocked.b)
+            if(!save.GetLevelLockByType(lvlButtonSetup[i].lockLevel).unlocked)
             {
-                lvlButtonSetup[i].unlocked.b = true;
+                save.GetLevelLockByType(lvlButtonSetup[i].lockLevel).unlocked = true;
                 Invoke(nameof(UnlockSFX), .8f);
                 anim.UnlockedAnim(lvlButtonSetup[i].levelIcon, lvlButtonSetup[i].lockedButtonColor, .5f, 1);
                 anim.Unlock(lvlButtonSetup[i].lockImage, 50, 1);
@@ -125,9 +90,9 @@ public class MenuManager : MonoBehaviour
 
     public void LevelUnlocked()
     {
-        for(int i = 0; i < soLevelManager.value; i++)
+        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds; i++)
         {
-            if(lvlButtonSetup[i].unlocked.b)
+            if(save.GetLevelLockByType(lvlButtonSetup[i].lockLevel).unlocked)
             {
                 lvlButtonSetup[i].lockImage.enabled = false;
                 lvlButtonSetup[i].lockedButtonColor.enabled = false;
@@ -136,17 +101,63 @@ public class MenuManager : MonoBehaviour
         
     }
 
+    #endregion
+
+    #region  Powerup Buttons
+    public void ShowCharPWUP(bool main)
+    {
+        if(!Settings.Instance.onSettings)
+        {
+            if(main)
+            {
+                StartCoroutine(sfx.DisappearRoutine(charPWUPs.Length));
+                cam.ChangeCam(main);
+                StartCoroutine(anim.ShowAndHideCharPWUPs(charPWUPs, outPwupX, .1f));
+                foreach(var b in mainButtons.GetComponentsInChildren<Image>())
+                spawn.Spawn(b.transform, delayToShow);
+            }
+            else
+            {
+                StartCoroutine(sfx.AppearRoutine(charPWUPs.Length));
+                cam.ChangeCam(main);
+                StartCoroutine(anim.ShowAndHideCharPWUPs(charPWUPs, inPwupX, .1f));
+                UnlockPWUPLvl(); //When go to the character pwups, check if the pwup has alredy get taken 
+                foreach(var b in mainButtons.GetComponentsInChildren<Image>())
+                anim.Hide(b, duration);
+            }
+        }
+    }
+
+    void UnlockPWUPLvl()
+    {
+        //Its's only triggered after press the charr button to show it
+        foreach(var pwups in save.saveLayout.powerups)
+        {
+            if(pwups.amountCollected >= 1) 
+            pwups.unlock = true;
+        }
+    }
+
+    #endregion
+    
+
     void UnlockSFX()
     {
         sfx.Unlock();
     }
 
+    void OnDestroy()
+    {
+        foreach(var c in charPWUPs) c?.transform.DOKill();
+        foreach(var i in iconsCase) i?.transform.DOKill();
+    }
+
     [System.Serializable]
     public class LevelButtonsSetups
     {
+        public LevelType lockLevel;
         public Image levelIcon;
         public Image lockImage;
         public Image lockedButtonColor;
-        public SOBool unlocked;
     }
 }

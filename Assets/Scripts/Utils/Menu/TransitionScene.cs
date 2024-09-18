@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Save;
 
 public class TransitionScene : MonoBehaviour
 {
@@ -27,5 +28,6 @@ public class TransitionScene : MonoBehaviour
     {
         above.transform.DOMoveY(-move, duration).SetDelay(delay).SetEase(ease).SetRelative();
         below.transform.DOMoveY(move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+        SaveManager.Instance?.Save();
     }
 }

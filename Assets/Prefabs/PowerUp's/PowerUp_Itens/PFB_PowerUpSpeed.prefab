@@ -405,8 +405,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToCompare: Player
-  soPWUPLevel: {fileID: 11400000, guid: 0b131a2106b9e014d89aa649abacc25c, type: 2}
-  powerUp: {fileID: 0}
+  pwupType: 0
+  powerUp: {fileID: 7559017848558574594}
   duration: 3
   particleTag: SpeedUp
   pwupSprite: {fileID: 21300000, guid: 31454f84fb5dcef4685069549000166a, type: 3}

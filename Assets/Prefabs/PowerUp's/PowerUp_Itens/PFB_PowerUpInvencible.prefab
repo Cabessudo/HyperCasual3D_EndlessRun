@@ -280,8 +280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToCompare: Player
-  soPWUPLevel: {fileID: 11400000, guid: 8580fc78bda5e0448a6713f06ca68bb2, type: 2}
-  powerUp: {fileID: 0}
+  pwupType: 1
+  powerUp: {fileID: 7815401087630327575}
   duration: 3
   particleTag: Invencible
   pwupSprite: {fileID: 21300000, guid: 87dffd41057579f4eb07da19fe74533d, type: 3}

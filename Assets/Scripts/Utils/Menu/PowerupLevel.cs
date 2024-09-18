@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Save;
+using DG.Tweening;
 
 public class PowerupLevel : MonoBehaviour
 {
+    public PowerupType powerupType;
+    private SaveManager save;
     public LevelButtonsAnim anim;
 
     [Header("Audio")]
@@ -16,8 +20,6 @@ public class PowerupLevel : MonoBehaviour
     [Header("PowerUp Level")]
     //Level
     public int level;
-    private int nextLevel = 1;
-    public SOPowerupsLvls soPowerupsLvls;
     public Image[] PWUPLvl;
 
     //Max Lvl
@@ -27,12 +29,10 @@ public class PowerupLevel : MonoBehaviour
     //Shop
     public Image PWUPButtonIcon;
     public GameObject ValueIcon;
-    public SOInt soCoins;
     public TextMeshProUGUI increaseCoinText;
     public int PWUPLvlValue = 50;
 
     //Button
-    private bool once;
     private bool check;
     private bool canInteract;
     
@@ -50,19 +50,21 @@ public class PowerupLevel : MonoBehaviour
 
     void Start()
     {
+        save = SaveManager.Instance?.GetComponent<SaveManager>();
         CheckMaxLvl();        
 
         Invoke(nameof(FloatAnim), .5f);
 
-        if(soPowerupsLvls.unlockAnim)
+        if(save.GetPowerupSaveByType(powerupType).unlockAnim)
         ButtonUnLocked();
     }
 
     void Update()
     {
-        if(soPowerupsLvls.unlock && !soPowerupsLvls.unlockAnim)
-        Invoke(nameof(UnLockIncreasePWUP), 1);
 
+        //after press the charr button, the unlock will become true, and if unlock anim is false will trigger the unlock anim
+        if(save.GetPowerupSaveByType(powerupType).unlock && !save.GetPowerupSaveByType(powerupType).unlockAnim)
+        Invoke(nameof(UnLockIncreasePWUP), 1); 
 
         ValueCoinText();
 
@@ -74,21 +76,21 @@ public class PowerupLevel : MonoBehaviour
     {
         if(!Settings.Instance.onSettings)
         {
-            if(PWUPLvlValue > soCoins.value || !canInteract || !soPowerupsLvls.unlock)
+            if(PWUPLvlValue > save.saveLayout.coins.value || !canInteract || !save.GetPowerupSaveByType(powerupType).unlock)
             {
                 sfx.Locked();
                 anim.LockedButton(transform);
             }
-            else if(PWUPLvlValue <= soCoins.value && canInteract && soPowerupsLvls.unlock && !anim.once)
+            else if(PWUPLvlValue <= save.saveLayout.coins.value && canInteract && save.GetPowerupSaveByType(powerupType).unlock && !anim.once)
             {   
                 sfx.LevelUp(); 
                 anim.once = true;
                 StartCoroutine(CoinAnim());
                 anim.BounceButton(transform, scale, duration);     
                 anim.UnlockedAnim(PWUPLvl[level], lvlPWUPColor[level], .3f);
-                soPowerupsLvls.currLevel += 1; 
+                save.GetPowerupSaveByType(powerupType).currLevel += 1; 
                 CheckPWUPLvl();
-                CheckMaxLvl();        
+                CheckMaxLvl();     
             }
         }
     }
@@ -98,10 +100,10 @@ public class PowerupLevel : MonoBehaviour
     {
         increaseCoinText.SetText("x " + PWUPLvlValue);
 
-        for(int i = level; i < soPowerupsLvls.currLevel; i++)
+        for(int i = level; i < save.GetPowerupSaveByType(powerupType).currLevel; i++)
         {
             PWUPLvlValue += 25;
-            level += nextLevel;
+            level += 1;
         }
     }
 
@@ -119,7 +121,7 @@ public class PowerupLevel : MonoBehaviour
     //Check if the lvl is maxed and need to show max text, and hide the buttons and coin value, and if can interact 
     void CheckMaxLvl()
     {
-        if(soPowerupsLvls.currLevel >= PWUPLvl.Length)
+        if(save.GetPowerupSaveByType(powerupType).currLevel >= PWUPLvl.Length)
         {
             canInteract = false;
             lvlMaxText.gameObject.SetActive(true);
@@ -127,18 +129,21 @@ public class PowerupLevel : MonoBehaviour
             PWUPButtonIcon.enabled = false;
             ValueIcon.SetActive(false);
         }
-        else if(soPowerupsLvls.currLevel < PWUPLvl.Length)
+        else if(save.GetPowerupSaveByType(powerupType).currLevel < PWUPLvl.Length)
         canInteract = true;
     }
+
+    #region Anim
     
     void UnLockIncreasePWUP()
     {
+        //Unlock the button to increase the pwup level (anim)
         sfxLock.Play();
         sfxUnlock.Play();
         anim.UnLockIncreasePWUPLvl(lockedButton, lockedButtonColor, 1);
         anim.Unlock(lockImage, 20, 1);
         anim.SpawnBouncing(ValueIcon.transform, 1.3f);
-        soPowerupsLvls.unlockAnim = true;
+        save.GetPowerupSaveByType(powerupType).unlockAnim = true; //To not triggered again
     }
 
     void ButtonUnLocked()
@@ -158,8 +163,21 @@ public class PowerupLevel : MonoBehaviour
     {
         for(int i = PWUPLvlValue; i > 0; i--)
         {
-            soCoins.value--;
+            save.saveLayout.coins.value--;
             yield return new WaitForSeconds(.01f);
         }
     }
+
+    void OnDestroy()
+    {
+        foreach(var p in PWUPLvl) p?.transform.DOKill();
+        lockImage?.DOKill();
+        ValueIcon?.transform.DOKill();
+        lockedButton?.DOKill();
+        lockedButtonColor?.DOKill();
+        lvlMaxText?.DOKill();
+        lvlMaxTextColor?.DOKill();
+        transform.DOKill();
+    }
+    #endregion
 }

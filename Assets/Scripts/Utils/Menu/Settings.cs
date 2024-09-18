@@ -10,6 +10,7 @@ using UnityEditor;
 
 public class Settings : Singleton<Settings>
 {
+
     [Header("Audio")]
     public AudioMenu sfx;
 
@@ -17,6 +18,8 @@ public class Settings : Singleton<Settings>
     //In Game
     public GameObject pauseButton;
     public TMPro.TextMeshProUGUI cantOpenWarn;
+    public LoadScene restart;
+    
     //Pause
     public GameObject pauseCase;
     public GameObject engine;
@@ -27,13 +30,9 @@ public class Settings : Singleton<Settings>
     public GameObject AudioCase;
     public List<GameObject> backAudioButton;
 
-    //Resart
-    public LoadScene restart;
-
     //Parameters
     private Ease easeLinear = Ease.Linear;
     private Ease easeBack = Ease.OutBack;
-    private float y = 150;
     private float duration = .1f;
     private int index;
     private float whiteColor = 225;
@@ -61,14 +60,13 @@ public class Settings : Singleton<Settings>
             backGround.SetActive(true);
             onSettings = true;
             StartCoroutine(ShowAnim(image));
-            if(engine != null)
-            SpinEngine();
+            if(engine != null) SpinEngine();
         }
     }
 
     void SpinEngine()
     {
-        engine.transform.DORotate(new Vector3(zero,zero,-260), .9f, RotateMode.FastBeyond360).SetEase(Ease.Linear);
+        engine.transform.DORotate(new Vector3(zero,zero,-260), .5f, RotateMode.FastBeyond360).SetEase(Ease.Linear);
     }
 
     public  void HideAndShowPauseButtonIcon(bool show = false)
@@ -103,8 +101,8 @@ public class Settings : Singleton<Settings>
         for(int i = obj.Count; i > 0; i--)
         {
             index = i - 1;
-            obj[index].transform.DOMoveY(y, duration).SetDelay(delay).SetEase(easeLinear).SetRelative();
             obj[index].transform.DORotate(new Vector3(-90, zero, zero), duration).SetDelay(delay).SetEase(easeLinear);
+
             StartCoroutine(sfx.DisappearRoutine(obj.Count));
             yield return new WaitForSeconds(duration);
         }
@@ -112,12 +110,13 @@ public class Settings : Singleton<Settings>
 
     IEnumerator ShowAnim(List<GameObject> obj, float delay = 0)
     {
+        
         for(int i = 0; i < obj.Count; i++)
         {
             StartCoroutine(sfx.AppearRoutine(obj.Count));
             index = i;
-            obj[index].transform.DOMoveY(-y, duration).SetDelay(delay).SetEase(easeLinear).SetRelative();
             obj[index].transform.DORotate(new Vector3(zero, zero, zero), duration).SetDelay(delay).SetEase(easeLinear);
+
             yield return new WaitForSeconds(duration);
         }
     }
@@ -144,7 +143,7 @@ public class Settings : Singleton<Settings>
             AudioCase.transform.DOScale(zero, duration).SetDelay(duration).SetEase(easeBack).OnComplete(
                 delegate
                 {
-                    pauseCase.transform.DOScale(.7f, duration).SetEase(easeBack);
+                    pauseCase.transform.DOScale(1, duration).SetEase(easeBack);
                 }
             );
         }

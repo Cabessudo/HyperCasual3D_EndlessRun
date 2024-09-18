@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artType: 1
   levelPieces:
-  - {fileID: 4617119891711559447, guid: b923c790b4e7293498029b1d86346c6b, type: 3}
+  - {fileID: 4617119891711559447, guid: 0fea5d3a1ef5b5243b2f4181aa79c6f9, type: 3}
   startLevelPiece:
   - {fileID: 4617119891711559447, guid: 0fea5d3a1ef5b5243b2f4181aa79c6f9, type: 3}
   endLevelPiece:
   - {fileID: -9037013103895121557, guid: 4ce21fa3f00b0754186d66e7154aa988, type: 3}
+  - {fileID: 4617119891711559447, guid: b923c790b4e7293498029b1d86346c6b, type: 3}
   posEndLevelPiece: []
   phaseLvl: 0
   startPiece: 2
