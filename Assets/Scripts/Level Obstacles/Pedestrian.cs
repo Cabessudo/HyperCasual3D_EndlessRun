@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Pedestrian : MonoBehaviour
 {
-    private CrossThePath _pedestrianParent;
     private BoxCollider _box;
     private Rigidbody _pedestrianRb;
     private Animator _pedestrianAnim;
+     public bool dead;
     private string deathTrigger = "Dead";
     private string playerTag = "Player";
 
@@ -15,16 +15,16 @@ public class Pedestrian : MonoBehaviour
     {
         _pedestrianAnim = GetComponent<Animator>();
         _pedestrianRb = GetComponent<Rigidbody>();
-        _pedestrianParent = GetComponentInParent<CrossThePath>();
         _box = GetComponent<BoxCollider>();
     }
 
+    [NaughtyAttributes.Button]
     public void Death()
     {
-        if(_pedestrianParent != null) _pedestrianParent.dead = true;
-        _pedestrianAnim.SetTrigger(deathTrigger);
+        dead = true;
         _pedestrianRb.useGravity = false;
         _box.enabled = false; 
+        _pedestrianAnim.SetTrigger(deathTrigger);
     }
 
     void OnCollisionEnter(Collision collision)

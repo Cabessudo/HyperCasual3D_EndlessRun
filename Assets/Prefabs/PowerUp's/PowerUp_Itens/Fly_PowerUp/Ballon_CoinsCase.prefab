@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2340448417663620204}
   - component: {fileID: 8629936252289271636}
+  - component: {fileID: 6323554808951137443}
   m_Layer: 0
   m_Name: CoinCase_02
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2798774650330294898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 0, z: 15}
+  m_LocalPosition: {x: -4, y: 2.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,11 +45,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efa0dfe700293540a413159307bcfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsFlyValues: {fileID: 6323554808951137443}
   spawn: {fileID: 8645568156158640490}
   coin: {fileID: -2253785055988765145, guid: fbacb4e093c0ea24fb08b114f1b2bc51, type: 3}
   startPos: {fileID: 2340448417663620204}
-  SOFly: {fileID: 11400000, guid: a0bafcef77cc41f48a8c9d046870b4ff, type: 2}
   timeBetweenCoin: 0.1
+--- !u!114 &6323554808951137443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2798774650330294898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0073af8362a3714f9aa9c24ac792862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsToAdd: 7
+  delayToLand: 1
 --- !u!1 &3456621360639437218
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949919853803451097}
   - component: {fileID: 2372726136366923700}
+  - component: {fileID: 1430310280162329269}
   m_Layer: 0
   m_Name: CoinCase_01
   m_TagString: Untagged
@@ -74,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3456621360639437218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: 2.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93,11 +109,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efa0dfe700293540a413159307bcfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsFlyValues: {fileID: 1430310280162329269}
   spawn: {fileID: 8645568156158640490}
   coin: {fileID: -2253785055988765145, guid: fbacb4e093c0ea24fb08b114f1b2bc51, type: 3}
   startPos: {fileID: 949919853803451097}
-  SOFly: {fileID: 11400000, guid: a0bafcef77cc41f48a8c9d046870b4ff, type: 2}
   timeBetweenCoin: 0.1
+--- !u!114 &1430310280162329269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3456621360639437218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0073af8362a3714f9aa9c24ac792862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsToAdd: 7
+  delayToLand: 1
 --- !u!1 &3540335955483353817
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ease: 31
   durationScale: 1.1
-  delayScale: 0.1
 --- !u!1 &7147089701704317214
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2936373665802752853}
   - component: {fileID: 3741952716711946873}
+  - component: {fileID: 136068519403531515}
   m_Layer: 0
   m_Name: CoinCase_03
   m_TagString: Untagged
@@ -173,7 +203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7147089701704317214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 15}
+  m_LocalPosition: {x: 4, y: 2.5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -192,8 +222,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efa0dfe700293540a413159307bcfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsFlyValues: {fileID: 136068519403531515}
   spawn: {fileID: 8645568156158640490}
   coin: {fileID: -2253785055988765145, guid: fbacb4e093c0ea24fb08b114f1b2bc51, type: 3}
   startPos: {fileID: 2936373665802752853}
-  SOFly: {fileID: 11400000, guid: a0bafcef77cc41f48a8c9d046870b4ff, type: 2}
   timeBetweenCoin: 0.1
+--- !u!114 &136068519403531515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7147089701704317214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0073af8362a3714f9aa9c24ac792862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsToAdd: 7
+  delayToLand: 1

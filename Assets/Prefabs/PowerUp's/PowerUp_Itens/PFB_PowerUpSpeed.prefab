@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 387764040}
   - component: {fileID: 387764043}
   - component: {fileID: 387764042}
-  - component: {fileID: 387764041}
   m_Layer: 0
   m_Name: EnergeticBuble
   m_TagString: Untagged
@@ -84,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &387764041
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 387764039}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1903693677
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +94,6 @@ GameObject:
   - component: {fileID: 1903693678}
   - component: {fileID: 1903693681}
   - component: {fileID: 1903693680}
-  - component: {fileID: 1903693679}
   m_Layer: 0
   m_Name: EnergeticBuble (2)
   m_TagString: Untagged
@@ -181,19 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1903693679
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903693677}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2092022811
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +177,6 @@ GameObject:
   - component: {fileID: 2092022812}
   - component: {fileID: 2092022815}
   - component: {fileID: 2092022814}
-  - component: {fileID: 2092022813}
   m_Layer: 0
   m_Name: EnergeticBuble (1)
   m_TagString: Untagged
@@ -278,19 +249,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2092022813
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092022811}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8569543947168565867
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +262,7 @@ GameObject:
   - component: {fileID: 7559017848558574594}
   - component: {fileID: 6127425593500721925}
   - component: {fileID: 1091188098}
+  - component: {fileID: -3185291011388284078}
   m_Layer: 0
   m_Name: PFB_PowerUpSpeed
   m_TagString: Untagged
@@ -406,10 +365,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToCompare: Player
   pwupType: 0
-  powerUp: {fileID: 7559017848558574594}
   duration: 3
   particleTag: SpeedUp
   pwupSprite: {fileID: 21300000, guid: 31454f84fb5dcef4685069549000166a, type: 3}
   pwupTxt: O maior aliado para virar a noite
   pwupRotation: -35
   amountSpeed: 14
+--- !u!114 &-3185291011388284078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8569543947168565867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0304c22768ced4584fcd4129c9e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 10
+  delay: 0
+  ease: 1

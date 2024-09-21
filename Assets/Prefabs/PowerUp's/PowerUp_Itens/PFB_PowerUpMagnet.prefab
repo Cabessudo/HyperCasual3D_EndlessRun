@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 510049425121031546}
   - component: {fileID: 4250259555489909373}
   - component: {fileID: 3086893637419222624}
+  - component: {fileID: 8150720138690288657}
   m_Layer: 0
   m_Name: PFB_PowerUpMagnet
   m_TagString: Untagged
@@ -112,10 +113,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToCompare: Player
   pwupType: 2
-  powerUp: {fileID: 510049425121031546}
   duration: 3
   particleTag: Magnet
   pwupSprite: {fileID: 21300000, guid: c02ce59e96443d0449e6148df62c714d, type: 3}
   pwupTxt: Ahh o Capitalismo
   pwupRotation: 0
   sizeAmout: 5
+--- !u!114 &8150720138690288657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809931662348526355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0304c22768ced4584fcd4129c9e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 10
+  delay: 0
+  ease: 1

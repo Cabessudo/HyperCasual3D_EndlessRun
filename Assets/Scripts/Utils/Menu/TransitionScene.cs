@@ -12,6 +12,7 @@ public class TransitionScene : MonoBehaviour
     public float duration = .7f;
     public float delay = .5f;
     [SerializeField] private float move = 1000;
+    private bool closed = true;
 
     void Start()
     {
@@ -20,14 +21,22 @@ public class TransitionScene : MonoBehaviour
 
     public void OpenScene()
     {
-        above.transform.DOMoveY(move, duration).SetDelay(delay).SetEase(ease).SetRelative();
-        below.transform.DOMoveY(-move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+        if(closed)
+        {
+            above.transform.DOMoveY(move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+            below.transform.DOMoveY(-move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+            closed = false;
+        }
     }
     
     public void CloseScene(float delay = 0)
     {
-        above.transform.DOMoveY(-move, duration).SetDelay(delay).SetEase(ease).SetRelative();
-        below.transform.DOMoveY(move, duration).SetDelay(delay).SetEase(ease).SetRelative();
-        SaveManager.Instance?.Save();
+        if(!closed)
+        {
+            above.transform.DOMoveY(-move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+            below.transform.DOMoveY(move, duration).SetDelay(delay).SetEase(ease).SetRelative();
+            SaveManager.Instance?.Save();
+            closed = true;
+        }
     }
 }

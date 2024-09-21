@@ -24,9 +24,12 @@ public class PowerUpBase : ItemCollatablesBase
         particle = GameObject.FindGameObjectWithTag(particleTag).GetComponent<ParticleSystem>();
         powerUpMesh = GetComponent<MeshRenderer>();
 
-        for(int i = 0; i < save.GetPowerupSaveByType(pwupType).currLevel; i++)
+        if(pwupType != PowerupType.Fly)
         {
-            duration += 1;
+            for(int i = 0; i < save.GetPowerupSaveByType(pwupType).currLevel; i++)
+            {
+                duration += 1;
+            }
         }
     }
 

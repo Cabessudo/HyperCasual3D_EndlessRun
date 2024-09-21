@@ -6,7 +6,7 @@ using System.Linq;
 
 public class CoinsFlyManager : MonoBehaviour
 {
-    public PowerUpFly pwupFly;
+    public CoinsFlyValues coinsFlyValues;
     public SpawnHelper spawn;
     public Coin coin;
     private List<Coin> _spawnedCoin = new List<Coin>();
@@ -16,13 +16,13 @@ public class CoinsFlyManager : MonoBehaviour
 
     void Start()
     {
-        SpawnCoins();
+        Invoke(nameof(SpawnCoins), .1f);
     }
 
     [NaughtyAttributes.Button]
     public void SpawnCoins()
     {
-        for(int i = 0; i < pwupFly.coinsToAdd; i++)
+        for(int i = 0; i < coinsFlyValues.coinsToAdd; i++)
         {
             SpawnNextCoin();
         }

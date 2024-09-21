@@ -5,10 +5,11 @@ using UnityEngine;
 public class CrossThePath : MonoBehaviour
 {
     [Header("References")]
-    public Rigidbody rb;
+    private Rigidbody rb;
     public SpawnHelper spawn;
     public GameObject[] obj;
-    protected int _randomObj;
+    public Pedestrian pedestrian;
+    protected int _randomPedestrian;
 
     [Header("Player Check")]
     private string playerTag = "Player";
@@ -21,17 +22,19 @@ public class CrossThePath : MonoBehaviour
 
     [Header("Parameters")]
     private bool one;
-    private bool once;
-    public bool dead;
+    private bool triggerGravityOnce = false;
     protected float timeToMove = .5f;
 
     [Header("Audio")]
     private AudioManager sfx;
     private bool outRoad; 
 
+    private bool isMoving = false;
+    private float _currSpeed;
+
     void Awake()
     {
-        _randomObj = Random.Range(0, obj.Length);
+        _randomPedestrian = Random.Range(0, obj.Length);
         _randomAnim = Random.Range(0, animType.Count);
 
         if(!outRoad) sfx = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
@@ -40,22 +43,34 @@ public class CrossThePath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(pedestrian != null)
+        {
+            Move();
+            
+            if(pedestrian.dead)
+            {
+                _currSpeed = 0;
+                StopAllCoroutines();
+            }
 
-        if(_onRadious && !dead)
+
+            if(!Settings.Instance.onSettings && one && !pedestrian.dead && !isMoving)
+            {
+                StartCoroutine(Movement());
+                StopPedestrian(false);
+            }
+            else if(Settings.Instance.onSettings && one)
+            {
+                StopAllCoroutines();
+                StopPedestrian(true);
+            }
+
+        }
+
+        if(_onRadious && !one)
         {
             SpawnObj();
             StartCoroutine(Movement());
-        }
-
-        if(!Settings.Instance.onSettings && one && !dead)
-        {
-            StartCoroutine(Movement());
-            StopPedestrian(false);
-        }
-        else if(Settings.Instance.onSettings && one || dead)
-        {
-            StopAllCoroutines();
-            StopPedestrian(true);
         }
     }
 
@@ -69,26 +84,29 @@ public class CrossThePath : MonoBehaviour
 
     void SpawnObj()
     {
-        if(!one)
-        { 
-            spawn.Spawn(transform);
-            Instantiate(obj[_randomObj], transform);
-            one = true;
-            if(sfx != null)
-            sfx.PedestrianSFX();
-        }
+        one = true;
+        spawn?.Spawn(transform);
+        var ped = Instantiate(obj[_randomPedestrian], transform);
+        pedestrian = ped.GetComponent<Pedestrian>();
+        sfx?.PedestrianSFX();
+    }
+
+    void Move()
+    {
+        if(one)
+            transform.Translate(Vector3.forward * _currSpeed * Time.deltaTime);
     }
 
     IEnumerator Movement()
     {
         yield return new WaitForSeconds(timeToMove);
         GetAnim();
+        _currSpeed = animType[_randomAnim].speed;
         _currAnim.SetTrigger(animType[_randomAnim].trigger);
-        transform.Translate(Vector3.forward * animType[_randomAnim].speed * Time.deltaTime);
-        if(!once)
+        if(!triggerGravityOnce)
         {
             rb.useGravity = true;
-            once = true;
+            triggerGravityOnce = true;
         }
     }
 
@@ -103,9 +121,17 @@ public class CrossThePath : MonoBehaviour
         if(_currAnim != null)
         {
             if(pause)
+            {
                 _currAnim.speed = 0;
+                isMoving = false;
+                _currSpeed = 0;
+            }
             else
+            {
+                _currSpeed = animType[_randomAnim].speed;
                 _currAnim.speed = 1;
+                isMoving = true;
+            }
         }
     }
 

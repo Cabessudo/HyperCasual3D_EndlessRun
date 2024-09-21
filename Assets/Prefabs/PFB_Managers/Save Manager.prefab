@@ -54,13 +54,13 @@ MonoBehaviour:
       levelsUnlockeds: 0
       currLevel: 0
     levelButtonsLock:
+    - levelType: 0
+      unlocked: 0
     - levelType: 1
       unlocked: 0
     - levelType: 2
       unlocked: 0
     - levelType: 3
-      unlocked: 0
-    - levelType: 4
       unlocked: 0
     powerups:
     - pwupType: 0

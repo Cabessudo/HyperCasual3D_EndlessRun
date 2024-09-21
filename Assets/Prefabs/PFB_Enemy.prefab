@@ -127,8 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8153ba348ee361b46a3b531f90ae6238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxCollider: {fileID: 2550174949380138739}
   obstacleRender: {fileID: 2550174949380138736}
   destroyedVFX: {fileID: 8651757522569203402}
+  once: 0
 --- !u!1001 &794829053717111964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VFX_ObstacleDestroyed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8293092224929557078, guid: 63474e23f30e94b4eabcbd3043991a6b,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63474e23f30e94b4eabcbd3043991a6b, type: 3}

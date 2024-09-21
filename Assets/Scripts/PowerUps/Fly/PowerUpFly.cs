@@ -7,9 +7,8 @@ public class PowerUpFly : PowerUpBase
     [Header("Fly Parameters")]
     public DG.Tweening.Ease easeFly = DG.Tweening.Ease.OutBack;
 
-    public float flyHeight = 11;
-    public int coinsToAdd = 7;
-    public float delayToLand = 1;
+    public CoinsFlyValues coinsFlyValues;
+    public float flyHeight = 9;
 
     [Header("Change Color")]
     public List<Material> colors;
@@ -22,13 +21,6 @@ public class PowerUpFly : PowerUpBase
     {
         base.Start();
 
-        //PWUP Fly Level
-        for(int i = 0; i < save.GetPowerupSaveByType(pwupType).currLevel; i++)
-        {
-            duration += .25f;
-            coinsToAdd += 4;
-        }
-
         //Set Ballon Random Color
         mesh.material = colors[Random.Range(0, colors.Count)];
     }
@@ -36,12 +28,13 @@ public class PowerUpFly : PowerUpBase
     protected override void StartPowerUp()
     {
         base.StartPowerUp();
-        PlayerController.Instance.Fly(flyHeight, duration, delayToLand, easeFly);
+        PlayerController.Instance.Fly(flyHeight, duration, coinsFlyValues.delayToLand, easeFly);
         SpawnCoinCase();
     }
 
     void SpawnCoinCase()
     {
-        coinCase.SetActive(true);
+        var coinFly = Instantiate(coinCase);
+        coinFly.transform.position = new Vector3(0, flyHeight, transform.position.z);
     }
 }

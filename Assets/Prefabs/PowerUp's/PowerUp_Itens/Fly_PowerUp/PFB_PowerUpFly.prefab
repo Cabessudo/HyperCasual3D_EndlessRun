@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1437426142213929628}
   - component: {fileID: 3322874523519403419}
   - component: {fileID: 7317758195163227301}
+  - component: {fileID: -3915366466974020615}
+  - component: {fileID: 3206508221829853139}
   m_Layer: 0
   m_Name: PFB_PowerUpFly
   m_TagString: Untagged
@@ -32,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2989451597385206976}
+  - {fileID: 3301178726126476611}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,9 +121,8 @@ MonoBehaviour:
   pwupTxt: "J\xE1 vi isso em algum lugar"
   pwupRotation: 0
   easeFly: 27
+  coinsFlyValues: {fileID: -3915366466974020615}
   flyHeight: 9
-  coinsToAdd: 0
-  delayToLand: 0
   colors:
   - {fileID: 2100000, guid: c61af19bd75cea141852910d2b65ab65, type: 2}
   - {fileID: 2100000, guid: edffb203f84b2b64499d1fa97cfd39bc, type: 2}
@@ -133,8 +134,38 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ae4ff49dfb4c229488b12d99e4b0e3fc, type: 2}
   - {fileID: 2100000, guid: 9b4c5cc012d4daa4091a98d5a1b07a09, type: 2}
   mesh: {fileID: 1437426142213929628}
-  coinCase: {fileID: 5246283955197711510}
---- !u!1001 &8786320276444214863
+  coinCase: {fileID: 3540335955483353817, guid: ba6dc7e7ce62b534f98667a1c052ace5,
+    type: 3}
+--- !u!114 &-3915366466974020615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0073af8362a3714f9aa9c24ac792862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinsToAdd: 7
+  delayToLand: 1
+--- !u!114 &3206508221829853139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006808555404815605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0304c22768ced4584fcd4129c9e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 10
+  delay: 0
+  ease: 1
+--- !u!1001 &9026279429416036300
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -174,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 5806245885689625231, guid: ba6dc7e7ce62b534f98667a1c052ace5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5806245885689625231, guid: ba6dc7e7ce62b534f98667a1c052ace5,
         type: 3}
@@ -223,15 +254,9 @@ PrefabInstance:
       objectReference: {fileID: 7317758195163227301}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba6dc7e7ce62b534f98667a1c052ace5, type: 3}
---- !u!4 &2989451597385206976 stripped
+--- !u!4 &3301178726126476611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5806245885689625231, guid: ba6dc7e7ce62b534f98667a1c052ace5,
     type: 3}
-  m_PrefabInstance: {fileID: 8786320276444214863}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5246283955197711510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3540335955483353817, guid: ba6dc7e7ce62b534f98667a1c052ace5,
-    type: 3}
-  m_PrefabInstance: {fileID: 8786320276444214863}
+  m_PrefabInstance: {fileID: 9026279429416036300}
   m_PrefabAsset: {fileID: 0}

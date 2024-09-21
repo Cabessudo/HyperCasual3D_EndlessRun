@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
     public BoxCollider boxCollider;
     public MeshRenderer obstacleRender;
     public ParticleSystem destroyedVFX;
-    private bool once = false;
+    public bool once = false;
 
     public void DestroyObstacle()
     {

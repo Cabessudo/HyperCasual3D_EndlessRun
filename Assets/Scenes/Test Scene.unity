@@ -287,6 +287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar
       objectReference: {fileID: 0}
+    - target: {fileID: 3639684553816761378, guid: 5a94ef81ebef4d94abc077373fe1376c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3639684553817028980, guid: 5a94ef81ebef4d94abc077373fe1376c,
         type: 3}
       propertyPath: m_RootOrder
@@ -8318,7 +8323,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834201218}
-  m_LocalRotation: {x: -0, y: -0, z: 9.313226e-10, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10056,6 +10061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1214158937}
+  - component: {fileID: 1214158938}
   m_Layer: 0
   m_Name: TestCase
   m_TagString: Untagged
@@ -10080,6 +10086,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214158938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214158936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0073af8362a3714f9aa9c24ac792862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyDuration: 3
+  coinsToAdd: 7
 --- !u!1 &1222825771
 GameObject:
   m_ObjectHideFlags: 0
@@ -11072,6 +11092,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
       propertyPath: m_Name
       value: SimplePeople_Man_Business_Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f8d00bf5057f624e949aef802595da9, type: 3}
       propertyPath: m_RootOrder
@@ -14341,7 +14365,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   targetPos: {fileID: 1676412160}
   lerpSpeed: 1
-  speed: 0
+  speed: 9
   timeToRestart: 1
   finish: 0
   currPWUPSCollecteds: 0

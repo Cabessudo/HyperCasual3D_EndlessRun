@@ -36,6 +36,7 @@ public class ItemManager : Singleton<ItemManager>
     private float menuCoinIn = 475;
     private float inGameEndCoinIn = 0;
     private bool canTransition;
+    private bool jumpEndAnim = false;
 
     [Header("PWUP Firt Time Collect")]
     public GameObject pwupFirstCollect;
@@ -92,6 +93,11 @@ public class ItemManager : Singleton<ItemManager>
             HideFirstTimeCollect();
             sfx.ShowAndHideFirstTimeGetPWUPSFX(false);
         }
+
+        if(Input.GetKeyDown(KeyCode.Mouse0) && jumpEndAnim && !RestartScreen.Instance.showCoins)
+        {
+            JumpEndCoinsAnim();
+        }
     }
 
     public void AddCoins(int manager = 1)
@@ -117,10 +123,20 @@ public class ItemManager : Singleton<ItemManager>
         coinsCase[index].transform.DOMove(whereToGo.transform.position, .9f).SetEase(ease).OnComplete(
             delegate
             {
-                Bounce(whereToGo.transform, scaleBounceAnim);
-                save.saveLayout.coins.value++;
-                sfx.CoinSFX();
+                if(jumpEndAnim)
+                {
+                    Bounce(whereToGo.transform, scaleBounceAnim);
+                    save.saveLayout.coins.value++;
+                    sfx.CoinSFX();
+                }
             });                
+    }
+
+    void JumpEndCoinsAnim()
+    {
+        save.saveLayout.coins.value += inGameCoins;
+        canTransition = true;
+        jumpEndAnim = false;
     }
 
     void LimitCheck()
@@ -160,6 +176,8 @@ public class ItemManager : Singleton<ItemManager>
 
     public IEnumerator UpdateCoins()
     {
+        jumpEndAnim = true;
+
         for(int i = inGameCoins; i > zero; i--)
         {
             EndCoinsAnim();

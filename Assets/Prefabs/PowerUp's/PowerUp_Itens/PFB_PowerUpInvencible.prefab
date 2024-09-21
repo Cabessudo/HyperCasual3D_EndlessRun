@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 7815401087630327575}
   - component: {fileID: 5880041204443021328}
   - component: {fileID: 919357717}
+  - component: {fileID: 4673175623058448920}
   m_Layer: 0
   m_Name: PFB_PowerUpInvencible
   m_TagString: Untagged
@@ -281,12 +282,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToCompare: Player
   pwupType: 1
-  powerUp: {fileID: 7815401087630327575}
   duration: 3
   particleTag: Invencible
   pwupSprite: {fileID: 21300000, guid: 87dffd41057579f4eb07da19fe74533d, type: 3}
   pwupTxt: A bebida te transforma
   pwupRotation: -35
+--- !u!114 &4673175623058448920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250530332233116030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0304c22768ced4584fcd4129c9e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 10
+  delay: 0
+  ease: 1
 --- !u!1 &8917123320556903200
 GameObject:
   m_ObjectHideFlags: 0

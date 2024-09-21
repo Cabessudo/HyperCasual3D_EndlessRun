@@ -50,7 +50,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ease: 31
   durationScale: 1.1
-  delayScale: 0.1
 --- !u!114 &6139202773356562057
 MonoBehaviour:
   m_ObjectHideFlags: 0
