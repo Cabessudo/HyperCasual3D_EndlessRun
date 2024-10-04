@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: -2253785055988765145}
   - component: {fileID: 2122592068392266814}
   - component: {fileID: 2459324798736559675}
+  - component: {fileID: 3963452129397876913}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagToCompare: CoinCollect
   coinSFX: {fileID: 6094512464962855441}
-  lerpSpeed: 9
+  lerpSpeed: 15
   timeToDestroy: 1
 --- !u!65 &2459324798736559675
 BoxCollider:
@@ -111,6 +112,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3963452129397876913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419126051819432350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0304c22768ced4584fcd4129c9e304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y: 0.1
+  delay: 0
+  ease: 1
 --- !u!1001 &2443550943107074265
 PrefabInstance:
   m_ObjectHideFlags: 0

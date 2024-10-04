@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4a3a7c8bc2879a249aaeb0cb31a7764a,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e5cec9ad749478046a668cf3d3b51ec3,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -535,7 +537,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2405944
+  m_Name: pb_Mesh-845814
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -929,7 +931,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2406160
+  m_Name: pb_Mesh-846030
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4935,7 +4937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &531961880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5189,7 +5191,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2406146
+  m_Name: pb_Mesh-846016
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7764,7 +7766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 195}
+  m_AnchoredPosition: {x: 0, y: 240}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039065115
@@ -8134,8 +8136,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1075506721}
-        m_TargetAssemblyTypeName: AudioChangeVolume, Assembly-CSharp
-        m_MethodName: ChageVolume
+        m_TargetAssemblyTypeName: ChangeSoundSlider, Assembly-CSharp
+        m_MethodName: ChangeVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8154,15 +8156,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075506718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b6bb75fe7b59a4580a2c22e0e4c41e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6132a5a1967143443b60405ad15cc5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _save: {fileID: 0}
   group: {fileID: 24100000, guid: e310c28a7973dbf4694a13ef702dbabe, type: 2}
   floatParam: SFXParam
   slider: {fileID: 1075506720}
-  audioSave:
-    musicVolume: 0
-    soundVolume: 0
   volumeText: {fileID: 40587788}
 --- !u!1 &1080914884
 GameObject:
@@ -9874,6 +9874,100 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1204187441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204187443}
+  - component: {fileID: 1204187442}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1204187442
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204187441}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 0.8558925, g: 0.8537736, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 74.43
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1204187443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204187441}
+  m_LocalRotation: {x: 0.5679575, y: 0.15857196, z: 0.19397435, w: 0.7839982}
+  m_LocalPosition: {x: 1.38, y: 5.56, z: -0.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 56, y: 57, z: 60}
 --- !u!1 &1213499109
 GameObject:
   m_ObjectHideFlags: 0
@@ -10809,8 +10903,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1398247609}
-        m_TargetAssemblyTypeName: AudioChangeVolume, Assembly-CSharp
-        m_MethodName: ChageVolume
+        m_TargetAssemblyTypeName: ChangeMusicSlider, Assembly-CSharp
+        m_MethodName: ChangeVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10829,15 +10923,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398247606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b6bb75fe7b59a4580a2c22e0e4c41e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d1ab4d80a7102b4298d8547f7ce0eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _save: {fileID: 0}
   group: {fileID: 24100000, guid: e310c28a7973dbf4694a13ef702dbabe, type: 2}
   floatParam: MusicParam
   slider: {fileID: 1398247608}
-  audioSave:
-    musicVolume: 0
-    soundVolume: 0
   volumeText: {fileID: 212625419}
 --- !u!1 &1408020368
 GameObject:
@@ -12229,7 +12321,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2406290
+  m_Name: pb_Mesh-846160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13932,7 +14024,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2406258
+  m_Name: pb_Mesh-846128
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15016,9 +15108,9 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2
-  m_Range: 10
+  m_Color: {r: 0.85490197, g: 0.85490197, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 74.43
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -15075,7 +15167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855266472}
   m_LocalRotation: {x: 0.60873365, y: -0.18452588, z: 0.05583276, w: 0.7695949}
-  m_LocalPosition: {x: 0.6, y: 5.68, z: -0.53}
+  m_LocalPosition: {x: 2.05, y: 4.5, z: -4.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16189,7 +16281,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2406114
+  m_Name: pb_Mesh-845984
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

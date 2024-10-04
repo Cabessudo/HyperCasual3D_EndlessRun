@@ -46,8 +46,9 @@ namespace Save
         
         #region  Save
         [NaughtyAttributes.Button]
-        public void CreateNewSaveButton()
+        public void CreateNewSave()
         {
+            Debug.Log("New Save");
             _saveLayout.coins.Clear();
             _saveLayout.audio.Clear();
             _saveLayout.level.Clear();
@@ -77,6 +78,10 @@ namespace Save
                 string json = File.ReadAllText(path);
                 _saveLayout = JsonUtility.FromJson<SaveLayout>(json);
                 Debug.Log(json);
+            }
+            else
+            {
+                CreateNewSave();
             }
         }
         #endregion

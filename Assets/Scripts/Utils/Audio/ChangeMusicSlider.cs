@@ -6,14 +6,15 @@ public class ChangeMusicSlider : AudioChangeVolumeBase
 {
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        LoadVolume(audioSave.musicVolume);
+        base.Start();
+        LoadVolume(_save.saveLayout.audio.musicVolume);
     }
 
-    public override void ChageVolume(float f)
+    public override void ChangeVolume(float f)
     {
-        base.ChageVolume(f);
-        audioSave.musicVolume = f;
+        base.ChangeVolume(f);
+        _save.saveLayout.audio.musicVolume = f;
     }   
 }

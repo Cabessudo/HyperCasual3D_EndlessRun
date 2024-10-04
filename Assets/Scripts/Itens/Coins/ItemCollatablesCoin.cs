@@ -54,9 +54,4 @@ public class ItemCollatablesCoin : ItemCollatablesBase
         ItemManager.Instance.AddCoins();
         Destroy(gameObject, timeToDestroy);
     }
-
-    /*void Animation()
-    {
-        /transform.DOMoveY(transform.position.y + 0.5f, 1).SetEase(ease).SetLoops(-1, LoopType.Yoyo);
-    }*/
 }

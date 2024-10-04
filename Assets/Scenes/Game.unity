@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 845938053}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e5cec9ad749478046a668cf3d3b51ec3,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1020,7 +1021,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1068913695}
         m_TargetAssemblyTypeName: Settings, Assembly-CSharp
         m_MethodName: ShowAndHideAudioCase
         m_Mode: 6
@@ -2632,8 +2633,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.2000005
+  m_Color: {r: 0.85490197, g: 0.85490197, b: 1, a: 1}
+  m_Intensity: 1.7
   m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8544,68 +8545,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 839013268}
   m_PrefabAsset: {fileID: 0}
---- !u!850595691 &845938053
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_LightmapCompression: 3
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 1
-  m_PVREnvironmentMIS: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
 --- !u!1 &867860355
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,7 +9459,7 @@ MonoBehaviour:
   above: {fileID: 483766434}
   below: {fileID: 2094729737}
   duration: 0.3
-  delay: 0.1
+  delay: 0
   move: 1100
 --- !u!114 &1068913694
 MonoBehaviour:
@@ -9655,8 +9594,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1075506721}
-        m_TargetAssemblyTypeName: AudioChangeVolume, Assembly-CSharp
-        m_MethodName: ChageVolume
+        m_TargetAssemblyTypeName: ChangeSoundSlider, Assembly-CSharp
+        m_MethodName: ChangeVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9675,15 +9614,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075506718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b6bb75fe7b59a4580a2c22e0e4c41e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6132a5a1967143443b60405ad15cc5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _save: {fileID: 0}
   group: {fileID: 24100000, guid: e310c28a7973dbf4694a13ef702dbabe, type: 2}
   floatParam: SFXParam
   slider: {fileID: 1075506720}
-  audioSave:
-    musicVolume: 0
-    soundVolume: 0
   volumeText: {fileID: 40587788}
 --- !u!1001 &1115884363
 PrefabInstance:
@@ -9891,7 +9828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1155136846
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10432,7 +10369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1398247607}
-  - component: {fileID: 1398247609}
+  - component: {fileID: 1398247610}
   - component: {fileID: 1398247608}
   m_Layer: 5
   m_Name: Audio Music Slider
@@ -10515,9 +10452,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1398247609}
-        m_TargetAssemblyTypeName: AudioChangeVolume, Assembly-CSharp
-        m_MethodName: ChageVolume
+      - m_Target: {fileID: 1398247610}
+        m_TargetAssemblyTypeName: ChangeMusicSlider, Assembly-CSharp
+        m_MethodName: ChangeVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10527,7 +10464,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1398247609
+--- !u!114 &1398247610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10536,15 +10473,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398247606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8b6bb75fe7b59a4580a2c22e0e4c41e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d1ab4d80a7102b4298d8547f7ce0eab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _save: {fileID: 0}
   group: {fileID: 24100000, guid: e310c28a7973dbf4694a13ef702dbabe, type: 2}
   floatParam: MusicParam
   slider: {fileID: 1398247608}
-  audioSave:
-    musicVolume: 0
-    soundVolume: 0
   volumeText: {fileID: 212625419}
 --- !u!1 &1408020368
 GameObject:
@@ -12717,7 +12652,7 @@ MonoBehaviour:
   unlock: {fileID: 8300000, guid: cc2a7088c8962644b865cda9f6b3129f, type: 3}
   locked: {fileID: 8300000, guid: d34dc77c579b75b46a4442a0c32a60f7, type: 3}
   bus: {fileID: 8300000, guid: 8ab478c515491ec4ca66e15f0634cde3, type: 3}
-  coin: {fileID: 8300000, guid: d04cbba9bbc6348ee871b50836a12812, type: 3}
+  coin: {fileID: 8300000, guid: 4e3603de7732b4cd9ba7bc643cd59c99, type: 3}
   volume: 0.1
 --- !u!82 &1772254851
 AudioSource:

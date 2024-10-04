@@ -117,7 +117,7 @@ public class ItemManager : Singleton<ItemManager>
         index = zero;
         coinsCase[index].SetActive(true);
         Bounce(whereToSpawn.transform, .9f);
-        sfxUI.CoinClick();
+        sfxUI?.CoinClick();
         inGameCoins--;
         coinsCase[index].transform.position = whereToSpawn.transform.position + Vector3.left * 100;
         coinsCase[index].transform.DOMove(whereToGo.transform.position, .9f).SetEase(ease).OnComplete(

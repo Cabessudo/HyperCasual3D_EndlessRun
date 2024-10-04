@@ -76,7 +76,7 @@ public class MenuManager : MonoBehaviour
 
     void UnlockLvl()
     {
-        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds; i++)
+        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds - 1; i++)
         {
             if(!save.GetLevelLockByType(lvlButtonSetup[i].lockLevel).unlocked)
             {
@@ -90,7 +90,7 @@ public class MenuManager : MonoBehaviour
 
     public void LevelUnlocked()
     {
-        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds; i++)
+        for(int i = 0; i < save.saveLayout.level.levelsUnlockeds - 1; i++)
         {
             if(save.GetLevelLockByType(lvlButtonSetup[i].lockLevel).unlocked)
             {
@@ -148,8 +148,15 @@ public class MenuManager : MonoBehaviour
 
     void OnDestroy()
     {
-        foreach(var c in charPWUPs) c?.transform.DOKill();
-        foreach(var i in iconsCase) i?.transform.DOKill();
+        foreach(var c in charPWUPs) 
+        {
+            if(c != null) c.transform.DOKill();
+        }
+        
+        foreach(var i in iconsCase) 
+        {
+            if(i != null) i?.transform.DOKill();
+        }
     }
 
     [System.Serializable]

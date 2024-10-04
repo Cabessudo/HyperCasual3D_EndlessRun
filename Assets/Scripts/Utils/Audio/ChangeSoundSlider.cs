@@ -5,14 +5,15 @@ using UnityEngine;
 public class ChangeSoundSlider : AudioChangeVolumeBase
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        LoadVolume(audioSave.soundVolume);
+        base.Start();
+        LoadVolume(_save.saveLayout.audio.soundVolume);
     }
 
-    public override void ChageVolume(float f)
+    public override void ChangeVolume(float f)
     {
-        base.ChageVolume(f);
-        audioSave.soundVolume = f;
+        base.ChangeVolume(f);
+        _save.saveLayout.audio.soundVolume = f;
     }
 }
